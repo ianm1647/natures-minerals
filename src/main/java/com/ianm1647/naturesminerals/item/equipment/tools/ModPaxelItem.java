@@ -1,7 +1,7 @@
 package com.ianm1647.naturesminerals.item.equipment.tools;
 
-//import com.brand.adapaxels.paxels.base.PaxelItem;
-import com.brand.adapaxels.paxels.base.PaxelItem;
+
+import com.brand.adapaxels.content.paxels.base.PaxelItem;
 import com.ianm1647.naturesminerals.item.ItemList;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;

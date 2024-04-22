@@ -1,5 +1,6 @@
 package com.ianm1647.naturesminerals.world;
 
+import com.ianm1647.naturesminerals.NaturesMinerals;
 import com.ianm1647.naturesminerals.block.BlockList;
 import com.ianm1647.naturesminerals.world.feature.FeatureList;
 import net.minecraft.block.Blocks;
@@ -18,10 +19,10 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 import java.util.List;
 
 public class ModConfiguredFeatures {
-    private static int UVARVEIN = 5;
-    private static int KUNZITEVEIN = 4;
-    private static int STIBNITEVEIN = 4;
-    private static int ASTRITEVEIN = 4;
+    private static int UVARVEIN = NaturesMinerals.CONFIG.veinSizeU;
+    private static int KUNZITEVEIN = NaturesMinerals.CONFIG.veinSizeK;
+    private static int STIBNITEVEIN = NaturesMinerals.CONFIG.veinSizeS;
+    private static int ASTRITEVEIN = NaturesMinerals.CONFIG.veinSizeA;
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         var placedFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.PLACED_FEATURE);

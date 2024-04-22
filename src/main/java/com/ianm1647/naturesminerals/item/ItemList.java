@@ -5,21 +5,27 @@ import net.minecraft.item.Item;
 public class ItemList {
 
     public static Item SCORCHED_COAL;
-
+    public static Item BLOOD_LAVA_BUCKET;
+    public static Item SCORCHING_BLOOD_BUCKET;
     public static Item RAW_UVAROVITE;
     public static Item UVAROVITE_INGOT;
     public static Item UVAROVITE_NUGGET;
+    public static Item MOLTEN_UVAROVITE_BUCKET;
     public static Item RAW_KUNZITE;
     public static Item KUNZITE_INGOT;
     public static Item KUNZITE_NUGGET;
+    public static Item MOLTEN_KUNZITE_BUCKET;
     public static Item RAW_STIBNITE;
     public static Item STIBNITE_INGOT;
     public static Item STIBNITE_NUGGET;
+    public static Item MOLTEN_STIBNITE_BUCKET;
     public static Item RAW_ASTRITE;
     public static Item ASTRITE_INGOT;
     public static Item ASTRITE_NUGGET;
+    public static Item MOLTEN_ASTRITE_BUCKET;
     public static Item THOUNITE_INGOT;
     public static Item THOUNITE_NUGGET;
+    public static Item MOLTEN_THOUNITE_BUCKET;
 
     public static Item UVAROVITE_APPLE;
     public static Item KUNZITE_APPLE;

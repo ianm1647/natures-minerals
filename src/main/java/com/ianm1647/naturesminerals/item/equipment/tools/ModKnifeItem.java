@@ -1,7 +1,7 @@
 package com.ianm1647.naturesminerals.item.equipment.tools;
 
 import com.ianm1647.naturesminerals.item.ItemList;
-import com.nhoryzon.mc.farmersdelight.item.KnifeItem;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.*;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -10,11 +10,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
+import vectorwing.farmersdelight.common.item.KnifeItem;
 
 public class ModKnifeItem extends KnifeItem {
 
-    public ModKnifeItem(ToolMaterial material, Settings settings) {
-        super(material);
+    public ModKnifeItem(ToolMaterial material, FabricItemSettings settings) {
+        super(material,.5f, -1.8f, settings);
     }
 
     @Override

@@ -226,13 +226,11 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         craftExcavator(exporter, ItemList.ASTRITE_EXCAVATOR, BlockList.ASTRITE_BLOCK.asItem(), ItemList.ASTRITE_INGOT);
         craftExcavator(exporter, ItemList.THOUNITE_EXCAVATOR, BlockList.THOUNITE_BLOCK.asItem(), ItemList.THOUNITE_INGOT);
 
-        /*
         craftKnife(exporter, ItemList.UVAROVITE_KNIFE, ItemList.UVAROVITE_INGOT);
         craftKnife(exporter, ItemList.KUNZITE_KNIFE, ItemList.KUNZITE_INGOT);
         craftKnife(exporter, ItemList.STIBNITE_KNIFE, ItemList.STIBNITE_INGOT);
         craftKnife(exporter, ItemList.ASTRITE_KNIFE, ItemList.ASTRITE_INGOT);
         craftKnife(exporter, ItemList.THOUNITE_KNIFE, ItemList.THOUNITE_INGOT);
-         */
 
     }
 
@@ -396,6 +394,18 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(input1))
                 .criterion(FabricRecipeProvider.hasItem(input2),
                         FabricRecipeProvider.conditionsFromItem(input2))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(output)));
+
+    }
+
+    private void craftKnife(Consumer<RecipeJsonProvider> exporter, Item output, Item input1) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
+                .pattern("I")
+                .pattern("S")
+                .input('I', input1)
+                .input('S', Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(input1),
+                        FabricRecipeProvider.conditionsFromItem(input1))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(output)));
 
     }

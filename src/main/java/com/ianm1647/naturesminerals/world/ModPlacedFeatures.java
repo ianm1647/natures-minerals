@@ -1,5 +1,6 @@
 package com.ianm1647.naturesminerals.world;
 
+import com.ianm1647.naturesminerals.NaturesMinerals;
 import com.ianm1647.naturesminerals.world.feature.FeatureList;
 import com.ianm1647.naturesminerals.world.feature.ModOreFeature;
 import net.minecraft.registry.Registerable;
@@ -17,21 +18,21 @@ import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import java.util.List;
 
 public class ModPlacedFeatures {
-    private static int UVARMAX = 10;
-    private static int UVARMIN = -40;
-    private static int UVARCHUNK = 2;
+    private static int UVARMAX = NaturesMinerals.CONFIG.maxHeightU;
+    private static int UVARMIN = NaturesMinerals.CONFIG.minHeightU;
+    private static int UVARCHUNK = NaturesMinerals.CONFIG.chunkAmountU;
 
-    private static int KUNZITEMAX = -20;
-    private static int KUNZITEMIN = -60;
-    private static int KUNZITECHUNK = 2;
+    private static int KUNZITEMAX = NaturesMinerals.CONFIG.maxHeightK;
+    private static int KUNZITEMIN = NaturesMinerals.CONFIG.minHeightK;
+    private static int KUNZITECHUNK = NaturesMinerals.CONFIG.chunkAmountK;
 
-    private static int STIBNITEMAX = 256;
-    private static int STIBNITEMIN = 0;
-    private static int STIBNITECHUNK = 6;
+    private static int STIBNITEMAX = NaturesMinerals.CONFIG.maxHeightS;
+    private static int STIBNITEMIN = NaturesMinerals.CONFIG.minHeightS;
+    private static int STIBNITECHUNK = NaturesMinerals.CONFIG.chunkAmountS;
 
-    private static int ASTRITEMAX = 256;
-    private static int ASTRITEMIN = 0;
-    private static int ASTRITECHUNK = 6;
+    private static int ASTRITEMAX = NaturesMinerals.CONFIG.maxHeightA;
+    private static int ASTRITEMIN = NaturesMinerals.CONFIG.minHeightA;
+    private static int ASTRITECHUNK = NaturesMinerals.CONFIG.chunkAmountA;
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);

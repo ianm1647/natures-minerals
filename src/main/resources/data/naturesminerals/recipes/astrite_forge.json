@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XSX",
+    "XXX"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:blast_furnace"
+    },
+    "X": {
+      "item": "naturesminerals:astrite_ingot"
+    }
+  },
+  "result": {
+    "item": "alloy_forgery:astrite_block_forge_controller"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "alloy_forgery"
+      ]
+    }
+  ]
+}
