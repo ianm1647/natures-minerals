@@ -1,0 +1,13 @@
+{
+  "values": [
+    "#c:storage_blocks/uvarovite",
+    "#c:storage_blocks/kunzite",
+    "#c:storage_blocks/stibnite",
+    "#c:storage_blocks/astrite",
+    "#c:storage_blocks/thounite",
+    "#c:storage_blocks/raw_uvarovite",
+    "#c:storage_blocks/raw_kunzite",
+    "#c:storage_blocks/raw_stibnite",
+    "#c:storage_blocks/raw_astrite"
+  ]
+}

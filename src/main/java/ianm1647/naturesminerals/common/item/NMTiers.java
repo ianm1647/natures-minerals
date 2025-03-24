@@ -3,14 +3,14 @@ package ianm1647.naturesminerals.common.item;
 import com.google.common.base.Suppliers;
 import ianm1647.naturesminerals.common.registry.NMItems;
 import ianm1647.naturesminerals.common.tag.NMCommonTags;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.common.Tags;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.function.Supplier;
 
@@ -68,14 +68,19 @@ public enum NMTiers implements Tier {
     }
 
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return this.repairIngredient.get();
     }
 
     public @Nullable TagKey<Block> getTag() {
         return getTagFromTier(this);
     }
 
+    public Tool createToolProperties(TagKey<Block> block) {
+        return new Tool(List.of(Tool.Rule.deniesDrops(this.getIncorrectBlocksForDrops()), Tool.Rule.minesAndDrops(block, this.getSpeed())), 1.0F, 1);
+    }
+
     public static TagKey<Block> getTagFromTier(NMTiers tier) {
+
         return switch (tier) {
             case UVAROVITE -> NMCommonTags.Blocks.NEEDS_UVAROVITE_TOOL;
             case KUNZITE -> NMCommonTags.Blocks.NEEDS_KUNZITE_TOOL;

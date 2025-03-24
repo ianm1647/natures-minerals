@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "naturesminerals:uvarovite_crystal",
+      "required": false
+    },
+    {
+      "id": "naturesminerals:kunzite_crystal",
+      "required": false
+    },
+    {
+      "id": "naturesminerals:stibnite_crystal",
+      "required": false
+    },
+    {
+      "id": "naturesminerals:astrite_crystal",
+      "required": false
+    }
+  ]
+}

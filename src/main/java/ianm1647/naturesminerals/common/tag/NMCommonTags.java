@@ -2,10 +2,12 @@ package ianm1647.naturesminerals.common.tag;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.FluidTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.material.Fluid;
 
 public class NMCommonTags {
 
@@ -41,6 +43,41 @@ public class NMCommonTags {
         public static final TagKey<Item> INGOTS_ASTRITE = itemTag("ingots/astrite");
         public static final TagKey<Item> INGOTS_THOUNITE = itemTag("ingots/thounite");
 
+        //nuggets
+        public static final TagKey<Item> NUGGETS_UVAROVITE = itemTag("nuggets/uvarovite");
+        public static final TagKey<Item> NUGGETS_KUNZITE = itemTag("nuggets/kunzite");
+        public static final TagKey<Item> NUGGETS_STIBNITE = itemTag("nuggets/stibnite");
+        public static final TagKey<Item> NUGGETS_ASTRITE = itemTag("nuggets/astrite");
+        public static final TagKey<Item> NUGGETS_THOUNITE = itemTag("nuggets/thounite");
+
+        //gears
+        public static final TagKey<Item> GEARS_UVAROVITE = itemTag("gears/uvarovite");
+        public static final TagKey<Item> GEARS_KUNZITE = itemTag("gears/kunzite");
+        public static final TagKey<Item> GEARS_STIBNITE = itemTag("gears/stibnite");
+        public static final TagKey<Item> GEARS_ASTRITE = itemTag("gears/astrite");
+        public static final TagKey<Item> GEARS_THOUNITE = itemTag("gears/thounite");
+
+        //plates
+        public static final TagKey<Item> PLATES_UVAROVITE = itemTag("plates/uvarovite");
+        public static final TagKey<Item> PLATES_KUNZITE = itemTag("plates/kunzite");
+        public static final TagKey<Item> PLATES_STIBNITE = itemTag("plates/stibnite");
+        public static final TagKey<Item> PLATES_ASTRITE = itemTag("plates/astrite");
+        public static final TagKey<Item> PLATES_THOUNITE = itemTag("plates/thounite");
+
+        //rods
+        public static final TagKey<Item> RODS_UVAROVITE = itemTag("rods/uvarovite");
+        public static final TagKey<Item> RODS_KUNZITE = itemTag("rods/kunzite");
+        public static final TagKey<Item> RODS_STIBNITE = itemTag("rods/stibnite");
+        public static final TagKey<Item> RODS_ASTRITE = itemTag("rods/astrite");
+        public static final TagKey<Item> RODS_THOUNITE = itemTag("rods/thounite");
+
+        //dusts
+        public static final TagKey<Item> DUSTS_UVAROVITE = itemTag("dusts/uvarovite");
+        public static final TagKey<Item> DUSTS_KUNZITE = itemTag("dusts/kunzite");
+        public static final TagKey<Item> DUSTS_STIBNITE = itemTag("dusts/stibnite");
+        public static final TagKey<Item> DUSTS_ASTRITE = itemTag("dusts/astrite");
+        public static final TagKey<Item> DUSTS_THOUNITE = itemTag("dusts/thounite");
+
     }
 
     public class Blocks {
@@ -73,6 +110,20 @@ public class NMCommonTags {
         public static final TagKey<Block> BLOCKS_ASTRITE = blockTag("storage_blocks/astrite");
         public static final TagKey<Block> BLOCKS_RAW_ASTRITE = blockTag("storage_blocks/raw_astrite");
         public static final TagKey<Block> BLOCKS_THOUNITE = blockTag("storage_blocks/thounite");
+
+    }
+
+    public class Fluids {
+
+        public static final TagKey<Fluid> BLOOD_LAVA = fluidTag("blood_lava");
+        public static final TagKey<Fluid> SCORCHING_BLOOD = fluidTag("scorching_blood");
+
+        public static final TagKey<Fluid> MOLTEN_UVAROVITE = fluidTag("molten_uvarovite");
+        public static final TagKey<Fluid> MOLTEN_KUNZITE = fluidTag("molten_kunzite");
+        public static final TagKey<Fluid> MOLTEN_STIBNITE = fluidTag("molten_stibnite");
+        public static final TagKey<Fluid> MOLTEN_ASTRITE = fluidTag("molten_astrite");
+        public static final TagKey<Fluid> MOLTEN_THOUNITE = fluidTag("molten_thounite");
+
     }
 
     private static TagKey<Block> blockTag(String path) {
@@ -81,5 +132,10 @@ public class NMCommonTags {
 
     private static TagKey<Item> itemTag(String path) {
         return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
+    }
+
+    private static TagKey<Fluid> fluidTag(String path) {
+        return FluidTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
+
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "naturesminerals:item/uvarovite_nugget"
+  }
+}

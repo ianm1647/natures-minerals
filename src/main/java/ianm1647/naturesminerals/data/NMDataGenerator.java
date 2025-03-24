@@ -37,6 +37,6 @@ public class NMDataGenerator {
         generator.addProvider(event.includeClient(), new NMItemModelProvider(output, helper));
 
         generator.addProvider(event.includeServer(), new LootTableProvider(output, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(NMBlockLootProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
-
+        generator.addProvider(event.includeServer(), new NMPackProvider(output, lookupProvider));
     }
 }

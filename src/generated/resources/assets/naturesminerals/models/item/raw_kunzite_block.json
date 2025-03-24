@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "naturesminerals:block/raw_kunzite_block"
+  }
+}

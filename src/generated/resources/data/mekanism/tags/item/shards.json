@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "naturesminerals:uvarovite_shard",
+      "required": false
+    },
+    {
+      "id": "naturesminerals:kunzite_shard",
+      "required": false
+    },
+    {
+      "id": "naturesminerals:stibnite_shard",
+      "required": false
+    },
+    {
+      "id": "naturesminerals:astrite_shard",
+      "required": false
+    }
+  ]
+}

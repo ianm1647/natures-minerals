@@ -16,7 +16,6 @@ import java.util.function.Supplier;
 public class NMBlocks {
 
     public static final DeferredRegister<Block> BLOCKS;
-    public static final DeferredRegister<Block> FLUIDS;
 
     public static Supplier<Block> UVAROVITE_ORE;
     public static Supplier<Block> DEEPSLATE_UVAROVITE_ORE;
@@ -34,6 +33,8 @@ public class NMBlocks {
     public static Supplier<Block> ASTRITE_BLOCK;
     public static Supplier<Block> THOUNITE_BLOCK;
 
+    public static Supplier<LiquidBlock> BLOOD_LAVA;
+    public static Supplier<LiquidBlock> SCORCHING_BLOOD;
     public static Supplier<LiquidBlock> MOLTEN_UVAROVITE;
     public static Supplier<LiquidBlock> MOLTEN_KUNZITE;
     public static Supplier<LiquidBlock> MOLTEN_STIBNITE;
@@ -42,7 +43,6 @@ public class NMBlocks {
 
     static {
         BLOCKS = DeferredRegister.create(Registries.BLOCK, NaturesMinerals.MODID);
-        FLUIDS = DeferredRegister.create(Registries.BLOCK, NaturesMinerals.MODID);
 
         UVAROVITE_ORE = BLOCKS.register("uvarovite_ore", () -> new Block(settings(Blocks.STONE, 4.0F, 6.0F, SoundType.STONE)));
         DEEPSLATE_UVAROVITE_ORE = BLOCKS.register("deepslate_uvarovite_ore", () -> new Block(settings(Blocks.STONE, 4.0F, 6.0F, SoundType.STONE)));
@@ -60,19 +60,25 @@ public class NMBlocks {
         ASTRITE_BLOCK = BLOCKS.register("astrite_block", () -> new Block(settings(Blocks.IRON_BLOCK, 8.0F, 9.0F, SoundType.NETHERITE_BLOCK)));
         THOUNITE_BLOCK = BLOCKS.register("thounite_block", () -> new Block(settings(Blocks.IRON_BLOCK, 10.0F, 12.0F, SoundType.NETHERITE_BLOCK)));
 
-        MOLTEN_UVAROVITE = FLUIDS.register("molten_uvarovite", () -> new LiquidBlock(NMFluids.MOLTEN_UVAROVITE.get(),
+        BLOOD_LAVA = BLOCKS.register("blood_lava", () -> new LiquidBlock(NMFluids.BLOOD_LAVA.get(),
+                BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA).replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
+                        .mapColor(DyeColor.GREEN).noLootTable()));
+        SCORCHING_BLOOD = BLOCKS.register("scorching_blood", () -> new LiquidBlock(NMFluids.SCORCHING_BLOOD.get(),
+                BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA).replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
+                        .mapColor(DyeColor.PINK).noLootTable()));
+        MOLTEN_UVAROVITE = BLOCKS.register("molten_uvarovite", () -> new LiquidBlock(NMFluids.MOLTEN_UVAROVITE.get(),
                 BlockBehaviour.Properties.of().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
                         .mapColor(DyeColor.GREEN).noLootTable()));
-        MOLTEN_KUNZITE = FLUIDS.register("molten_kunzite", () -> new LiquidBlock(NMFluids.MOLTEN_KUNZITE.get(),
+        MOLTEN_KUNZITE = BLOCKS.register("molten_kunzite", () -> new LiquidBlock(NMFluids.MOLTEN_KUNZITE.get(),
                 BlockBehaviour.Properties.of().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
                         .mapColor(DyeColor.PINK).noLootTable()));
-        MOLTEN_STIBNITE= FLUIDS.register("molten_stibnite", () -> new LiquidBlock(NMFluids.MOLTEN_STIBNITE.get(),
+        MOLTEN_STIBNITE= BLOCKS.register("molten_stibnite", () -> new LiquidBlock(NMFluids.MOLTEN_STIBNITE.get(),
                 BlockBehaviour.Properties.of().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
                         .mapColor(DyeColor.LIGHT_BLUE).noLootTable()));
-        MOLTEN_ASTRITE = FLUIDS.register("molten_astrite", () -> new LiquidBlock(NMFluids.MOLTEN_ASTRITE.get(),
+        MOLTEN_ASTRITE = BLOCKS.register("molten_astrite", () -> new LiquidBlock(NMFluids.MOLTEN_ASTRITE.get(),
                 BlockBehaviour.Properties.of().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
                         .mapColor(DyeColor.RED).noLootTable()));
-        MOLTEN_THOUNITE = FLUIDS.register("molten_thounite", () -> new LiquidBlock(NMFluids.MOLTEN_THOUNITE.get(),
+        MOLTEN_THOUNITE = BLOCKS.register("molten_thounite", () -> new LiquidBlock(NMFluids.MOLTEN_THOUNITE.get(),
                 BlockBehaviour.Properties.of().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
                         .mapColor(DyeColor.YELLOW).noLootTable()));
 
