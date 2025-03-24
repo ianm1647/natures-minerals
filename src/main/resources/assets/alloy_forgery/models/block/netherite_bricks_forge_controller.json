@@ -1,8 +1,0 @@
-{
-  "parent": "block/orientable",
-  "textures": {
-    "top": "naturesminerals:block/forge/netherite_forge_controller_top",
-    "front": "naturesminerals:block/forge/netherite_forge_controller_front",
-    "side": "naturesminerals:block/forge/netherite_forge_controller_side"
-  }
-}

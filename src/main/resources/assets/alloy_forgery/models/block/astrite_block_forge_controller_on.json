@@ -1,6 +1,0 @@
-{
-  "parent": "alloy_forgery:block/astrite_block_forge_controller",
-  "textures": {
-    "front": "naturesminerals:block/forge/astrite_forge_controller_front_on"
-  }
-}

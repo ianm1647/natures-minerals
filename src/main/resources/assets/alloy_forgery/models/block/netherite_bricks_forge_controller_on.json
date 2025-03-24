@@ -1,6 +1,0 @@
-{
-  "parent": "alloy_forgery:block/netherite_bricks_forge_controller",
-  "textures": {
-    "front": "naturesminerals:block/forge/netherite_forge_controller_front_on"
-  }
-}
