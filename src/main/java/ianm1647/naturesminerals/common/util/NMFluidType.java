@@ -20,7 +20,7 @@ public class NMFluidType extends FluidType {
     @Override
     public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
         consumer.accept(new IClientFluidTypeExtensions() {
-            private final ResourceLocation UNDER_FLUID = ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID, "block/fluid/" + texture + "_still.png");
+            private final ResourceLocation UNDER_FLUID = ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID, "texture/block/fluid/" + texture + "_still.png");
             private final ResourceLocation FLUID_STILL = ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID, "block/fluid/" + texture + "_still");
             private final ResourceLocation FLUID_FLOW = ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID, "block/fluid/" + texture + "_flowing");
             private final ResourceLocation FLUID_OVERLAY = ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID, "block/fluid/" + texture + "_still");

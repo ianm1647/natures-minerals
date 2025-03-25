@@ -4,8 +4,11 @@ import ianm1647.naturesminerals.NaturesMinerals;
 import ianm1647.naturesminerals.common.registry.NMItems;
 import ianm1647.naturesminerals.common.tag.NMCommonTags;
 import ianm1647.naturesminerals.common.tag.NMCompatTags;
+import ianm1647.naturesminerals.integration.farmersdelight.FarmersDelightIntegration;
+import ianm1647.naturesminerals.integration.farmersdelight.ModKnifeItem;
 import ianm1647.naturesminerals.integration.mekanism.MekanismIntegration;
 import ianm1647.naturesminerals.integration.mekanism.ModPaxelItem;
+import mekanism.common.tags.MekanismTags;
 import mekanism.tools.common.ToolsTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -18,6 +21,7 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import vectorwing.farmersdelight.common.tag.ModTags;
 
 import javax.annotation.Nullable;
 import java.util.concurrent.CompletableFuture;
@@ -33,7 +37,8 @@ public class NMItemTagProvider extends ItemTagsProvider {
         itemBlockTags();
         toolTags();
         armorTags();
-        compatTags();
+        mekTags();
+        fdTags();
     }
 
     private void itemTags() {
@@ -141,9 +146,6 @@ public class NMItemTagProvider extends ItemTagsProvider {
                     if (item.get() instanceof HoeItem) {
                         tag(ItemTags.HOES).add(item.get());
                     }
-                    if (item.get() instanceof ModPaxelItem) {
-                        tag(ToolsTags.Items.TOOLS_PAXEL).add(item.get());
-                    }
                 }
         );
     }
@@ -167,7 +169,14 @@ public class NMItemTagProvider extends ItemTagsProvider {
                 });
     }
 
-    private void compatTags() {
+    private void mekTags() {
+        MekanismIntegration.Items.MEKITEM.getEntries()
+                .forEach((item) -> {
+                    if (item.get() instanceof ModPaxelItem) {
+                        tag(ToolsTags.Items.TOOLS_PAXEL).add(item.get());
+                    }
+                });
+
         tag(NMCompatTags.Items.CLUMPS).addOptionalTags(
                 NMCommonTags.Items.UVAROVITE_CLUMP,
                 NMCommonTags.Items.KUNZITE_CLUMP,
@@ -236,6 +245,15 @@ public class NMItemTagProvider extends ItemTagsProvider {
         tag(NMCommonTags.Items.STIBNITE_SHARD).addOptional(loc(MekanismIntegration.Items.STIBNITE_SHARD.get()));
         tag(NMCommonTags.Items.ASTRITE_SHARD).addOptional(loc(MekanismIntegration.Items.ASTRITE_SHARD.get()));
 
+    }
+
+    private void fdTags() {
+        FarmersDelightIntegration.Items.DELITEM.getEntries()
+                .forEach((item) -> {
+                    if (item.get() instanceof ModKnifeItem) {
+                        tag(ModTags.KNIVES).add(item.get());
+                    }
+                });
     }
 
     private ResourceLocation loc(Item item) {

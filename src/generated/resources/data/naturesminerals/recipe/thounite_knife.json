@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "knife",
+  "key": {
+    "i": {
+      "item": "naturesminerals:thounite_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "i",
+    "s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:thounite_knife"
+  }
+}

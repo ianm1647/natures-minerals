@@ -2,6 +2,8 @@ package ianm1647.naturesminerals.data;
 
 import ianm1647.naturesminerals.NaturesMinerals;
 import ianm1647.naturesminerals.common.registry.NMItems;
+import ianm1647.naturesminerals.integration.farmersdelight.FarmersDelightIntegration;
+import ianm1647.naturesminerals.integration.farmersdelight.ModKnifeItem;
 import ianm1647.naturesminerals.integration.mekanism.MekanismIntegration;
 import ianm1647.naturesminerals.integration.mekanism.ModPaxelItem;
 import net.minecraft.data.PackOutput;
@@ -46,6 +48,15 @@ public class NMItemModelProvider extends ItemModelProvider {
         MekanismIntegration.Items.MEKITEM.getEntries().forEach((item) -> {
             String name = item.getId().getPath();
             if (item.get() instanceof ModPaxelItem) {
+                this.handheldItem(NaturesMinerals.loc(name));
+            } else {
+                this.withExistingParent(name, generated).texture("layer0", this.resLoc("mekanism/" + name));
+            }
+        });
+
+        FarmersDelightIntegration.Items.DELITEM.getEntries().forEach((item) -> {
+            String name = item.getId().getPath();
+            if (item.get() instanceof ModKnifeItem) {
                 this.handheldItem(NaturesMinerals.loc(name));
             } else {
                 this.withExistingParent(name, generated).texture("layer0", this.resLoc("mekanism/" + name));

@@ -74,6 +74,36 @@ public class MekanismRecipes {
         MekanismIntegration.Items.MEKITEM.getEntries()
                 .forEach((item) -> {
                     String name = item.getId().getPath();
+                    if (name.contains("clump")) {
+                        ItemStackChemicalToItemStackRecipeBuilder.purifying(
+                                        IngredientCreatorAccess.item().from(
+                                                BuiltInRegistries.ITEM.get(NaturesMinerals.loc("raw_" + name.replace("_clump", "")))),
+                                        IngredientCreatorAccess.chemicalStack().fromHolder(MekanismChemicals.OXYGEN, 200),
+                                        new ItemStack(item.get(), 2), false)
+                                .addCondition(new ModLoadedCondition("mekanism"))
+                                .build(output, mekLoc(name.replace("_clump", "") + "/clump/from_raw"));
+                        ItemStackChemicalToItemStackRecipeBuilder.purifying(
+                                        IngredientCreatorAccess.item().from(
+                                                BuiltInRegistries.ITEM.get(NaturesMinerals.loc("raw_" + name.replace("_clump", "") + "_block"))),
+                                        IngredientCreatorAccess.chemicalStack().fromHolder(MekanismChemicals.OXYGEN, 400),
+                                        new ItemStack(item.get(), 18), false)
+                                .addCondition(new ModLoadedCondition("mekanism"))
+                                .build(output, mekLoc(name.replace("_clump", "") + "/clump/from_raw_block"));
+                        ItemStackChemicalToItemStackRecipeBuilder.purifying(
+                                        IngredientCreatorAccess.item().from(ItemTags.create(
+                                                ResourceLocation.fromNamespaceAndPath("c", "ores/" + name.replace("_clump", "")))),
+                                        IngredientCreatorAccess.chemicalStack().fromHolder(MekanismChemicals.OXYGEN, 200),
+                                        new ItemStack(item.get(), 3), false)
+                                .addCondition(new ModLoadedCondition("mekanism"))
+                                .build(output, mekLoc(name.replace("_clump", "") + "/clump/from_ore"));
+                        ItemStackChemicalToItemStackRecipeBuilder.purifying(
+                                        IngredientCreatorAccess.item().from(
+                                                BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_clump", "") + "_shard"))),
+                                        IngredientCreatorAccess.chemicalStack().fromHolder(MekanismChemicals.OXYGEN, 200),
+                                        item.get().getDefaultInstance(), false)
+                                .addCondition(new ModLoadedCondition("mekanism"))
+                                .build(output, mekLoc(name.replace("_clump", "") + "/clump/from_shard"));
+                    }
                     if (name.contains("shard")) {
                         ItemStackChemicalToItemStackRecipeBuilder.injecting(
                                 IngredientCreatorAccess.item().from(

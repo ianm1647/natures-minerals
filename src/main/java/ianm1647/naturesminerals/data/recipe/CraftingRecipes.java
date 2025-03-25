@@ -3,6 +3,7 @@ package ianm1647.naturesminerals.data.recipe;
 import ianm1647.naturesminerals.NaturesMinerals;
 import ianm1647.naturesminerals.common.registry.NMItems;
 import ianm1647.naturesminerals.data.recipe.builder.ConditionalShapedRecipeBuilder;
+import ianm1647.naturesminerals.integration.farmersdelight.FarmersDelightIntegration;
 import ianm1647.naturesminerals.integration.mekanism.MekanismIntegration;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -131,6 +132,17 @@ public class CraftingRecipes {
                                         name.replace("_paxel", "") + "_shovel")), output);
                     }
                 });
+
+        FarmersDelightIntegration.Items.DELITEM.getEntries()
+                .forEach((item) -> {
+                    String name = item.getId().getPath();
+                    if (name.contains("knife")) {
+                        craftKnife(item.get(),
+                                BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
+                                        name.replace("_knife", "_ingot"))), output);
+                    }
+                });
+
     }
 
     private static void craftAxe(ItemLike tool, ItemLike input, RecipeOutput output) {
@@ -224,6 +236,19 @@ public class CraftingRecipes {
                 .define('i', input)
                 .group("boots").unlockedBy("has_material",
                         InventoryChangeTrigger.TriggerInstance.hasItems(input)).save(output);
+    }
+
+    private static void craftKnife(ItemLike tool, ItemLike input, RecipeOutput output) {
+        ConditionalShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, tool, 1)
+                .pattern("i")
+                .pattern("s")
+                .define('i', input)
+                .define('s', Items.STICK)
+                .group("knife")
+                .unlockedBy("has_material",
+                        InventoryChangeTrigger.TriggerInstance.hasItems(input))
+                .conditions(new ModLoadedCondition("farmersdelight"))
+                .save(output);
     }
 
     private static void craftPaxel(ItemLike tool, ItemLike axe, ItemLike pickaxe, ItemLike shovel, RecipeOutput output) {

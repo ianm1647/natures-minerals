@@ -47,7 +47,7 @@ public class ModPaxelItem extends DiggerItem {
     });
 
     public ModPaxelItem(NMTiers tier, Item.Properties properties) {
-        super(tier, ToolsTags.Blocks.MINEABLE_WITH_PAXEL, properties.attributes(createAttributes(tier, tier.getAttackDamageBonus(), -2.4f)));
+        super(tier, ToolsTags.Blocks.MINEABLE_WITH_PAXEL, properties.attributes(createAttributes(tier, 1.5f, -2.4f)));
     }
 
     public void appendHoverText(@NotNull ItemStack stack, @NotNull Item.@NotNull TooltipContext context, @NotNull List<Component> tooltip, @NotNull TooltipFlag flag) {

@@ -4,7 +4,6 @@ import ianm1647.naturesminerals.NaturesMinerals;
 import ianm1647.naturesminerals.common.registry.NMItems;
 import ianm1647.naturesminerals.data.recipe.builder.ConditionalCookingRecipeBuilder;
 import ianm1647.naturesminerals.integration.mekanism.MekanismIntegration;
-import mekanism.tools.common.item.ItemMekanismPaxel;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.recipes.RecipeCategory;

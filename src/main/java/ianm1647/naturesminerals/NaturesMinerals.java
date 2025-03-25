@@ -2,6 +2,7 @@ package ianm1647.naturesminerals;
 
 import ianm1647.naturesminerals.common.item.NMMaterials;
 import ianm1647.naturesminerals.common.registry.*;
+import ianm1647.naturesminerals.integration.farmersdelight.FarmersDelightIntegration;
 import ianm1647.naturesminerals.integration.mekanism.MekanismIntegration;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
@@ -32,6 +33,11 @@ public class NaturesMinerals {
         if (ModList.get().isLoaded("mekanism")) {
             MekanismIntegration.register(bus);
             bus.addListener(MekanismIntegration::addCreative);
+        }
+
+        if (ModList.get().isLoaded("farmersdelight")) {
+            FarmersDelightIntegration.register(bus);
+            bus.addListener(FarmersDelightIntegration::addCreative);
         }
     }
 

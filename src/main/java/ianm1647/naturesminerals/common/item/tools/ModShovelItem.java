@@ -6,6 +6,6 @@ import net.minecraft.world.item.ShovelItem;
 
 public class ModShovelItem extends ShovelItem {
     public ModShovelItem(NMTiers tier, Properties properties) {
-        super(tier, properties.attributes(createAttributes(tier, tier.getAttackDamageBonus() - 4, -3.0f)));
+        super(tier, properties.attributes(createAttributes(tier, 1.5f, -3.0f)));
     }
 }

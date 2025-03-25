@@ -30,6 +30,8 @@ dependencies {
     implementation "top.theillusivec4.curios:curios-neoforge:$curios_version"
     implementation "snownee.jade:Jade-NeoForge:$minecraft_version-$jade_version"
 
+    implementation "curse.maven:farmersdelight-398521:6154807"
+    implementation "curse.maven:create-328085:6323264"
     implementation "curse.maven:mekanism-268560:6327955"
     implementation "curse.maven:mekanismtools-268567:6327959"
 }

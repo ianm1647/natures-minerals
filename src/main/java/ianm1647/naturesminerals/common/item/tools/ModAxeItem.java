@@ -5,6 +5,6 @@ import net.minecraft.world.item.AxeItem;
 
 public class ModAxeItem extends AxeItem {
     public ModAxeItem(NMTiers tier, Properties properties) {
-        super(tier, properties.attributes(createAttributes(tier, tier.getAttackDamageBonus() - 1, -3.0f)));
+        super(tier, properties.attributes(createAttributes(tier, 6f, -3.0f)));
     }
 }
