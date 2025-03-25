@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ingot",
+  "ingredients": [
+    {
+      "item": "naturesminerals:thounite_nugget"
+    },
+    {
+      "item": "naturesminerals:thounite_nugget"
+    },
+    {
+      "item": "naturesminerals:thounite_nugget"
+    },
+    {
+      "item": "naturesminerals:thounite_nugget"
+    },
+    {
+      "item": "naturesminerals:thounite_nugget"
+    },
+    {
+      "item": "naturesminerals:thounite_nugget"
+    },
+    {
+      "item": "naturesminerals:thounite_nugget"
+    },
+    {
+      "item": "naturesminerals:thounite_nugget"
+    },
+    {
+      "item": "naturesminerals:thounite_nugget"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:thounite_ingot"
+  }
+}

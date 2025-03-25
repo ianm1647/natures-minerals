@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "naturesminerals:stibnite_axe"
+    },
+    {
+      "item": "naturesminerals:stibnite_pickaxe"
+    },
+    {
+      "item": "naturesminerals:stibnite_shovel"
+    },
+    {
+      "item": "naturesminerals:stibnite_hoe"
+    },
+    {
+      "item": "naturesminerals:stibnite_sword"
+    },
+    {
+      "item": "naturesminerals:stibnite_helmet"
+    },
+    {
+      "item": "naturesminerals:stibnite_chestplate"
+    },
+    {
+      "item": "naturesminerals:stibnite_leggings"
+    },
+    {
+      "item": "naturesminerals:stibnite_boots"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:stibnite_nugget"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "helmet",
+  "key": {
+    "i": {
+      "item": "naturesminerals:astrite_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:astrite_helmet"
+  }
+}

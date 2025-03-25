@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "storage_blocks",
+  "ingredients": [
+    {
+      "item": "naturesminerals:raw_kunzite"
+    },
+    {
+      "item": "naturesminerals:raw_kunzite"
+    },
+    {
+      "item": "naturesminerals:raw_kunzite"
+    },
+    {
+      "item": "naturesminerals:raw_kunzite"
+    },
+    {
+      "item": "naturesminerals:raw_kunzite"
+    },
+    {
+      "item": "naturesminerals:raw_kunzite"
+    },
+    {
+      "item": "naturesminerals:raw_kunzite"
+    },
+    {
+      "item": "naturesminerals:raw_kunzite"
+    },
+    {
+      "item": "naturesminerals:raw_kunzite"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:raw_kunzite_block"
+  }
+}

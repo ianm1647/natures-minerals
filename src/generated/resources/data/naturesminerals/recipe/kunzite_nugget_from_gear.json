@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "naturesminerals:kunzite_axe"
+    },
+    {
+      "item": "naturesminerals:kunzite_pickaxe"
+    },
+    {
+      "item": "naturesminerals:kunzite_shovel"
+    },
+    {
+      "item": "naturesminerals:kunzite_hoe"
+    },
+    {
+      "item": "naturesminerals:kunzite_sword"
+    },
+    {
+      "item": "naturesminerals:kunzite_helmet"
+    },
+    {
+      "item": "naturesminerals:kunzite_chestplate"
+    },
+    {
+      "item": "naturesminerals:kunzite_leggings"
+    },
+    {
+      "item": "naturesminerals:kunzite_boots"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:kunzite_nugget"
+  }
+}

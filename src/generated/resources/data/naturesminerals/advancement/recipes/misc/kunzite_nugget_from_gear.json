@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gear": {
+      "conditions": {
+        "items": [
+          {
+            "items": "naturesminerals:kunzite_axe"
+          },
+          {
+            "items": "naturesminerals:kunzite_pickaxe"
+          },
+          {
+            "items": "naturesminerals:kunzite_shovel"
+          },
+          {
+            "items": "naturesminerals:kunzite_hoe"
+          },
+          {
+            "items": "naturesminerals:kunzite_sword"
+          },
+          {
+            "items": "naturesminerals:kunzite_helmet"
+          },
+          {
+            "items": "naturesminerals:kunzite_chestplate"
+          },
+          {
+            "items": "naturesminerals:kunzite_leggings"
+          },
+          {
+            "items": "naturesminerals:kunzite_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "naturesminerals:kunzite_nugget_from_gear"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gear"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "naturesminerals:kunzite_nugget_from_gear"
+    ]
+  }
+}

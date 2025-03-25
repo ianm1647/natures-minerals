@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "chestplate",
+  "key": {
+    "i": {
+      "item": "naturesminerals:astrite_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:astrite_chestplate"
+  }
+}

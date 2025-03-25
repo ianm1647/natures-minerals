@@ -30,6 +30,8 @@ public class NMDataGenerator {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
         ExistingFileHelper helper = event.getExistingFileHelper();
 
+        generator.addProvider(event.includeServer(), new NMRecipeProvider(output, lookupProvider));
+
         NMBlockTagProvider blockTags = new NMBlockTagProvider(output, lookupProvider, helper);
         generator.addProvider(event.includeServer(), blockTags);
         generator.addProvider(event.includeServer(), new NMItemTagProvider(output, lookupProvider, blockTags.contentsGetter(), helper));
@@ -38,5 +40,6 @@ public class NMDataGenerator {
 
         generator.addProvider(event.includeServer(), new LootTableProvider(output, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(NMBlockLootProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
         generator.addProvider(event.includeServer(), new NMPackProvider(output, lookupProvider));
+
     }
 }

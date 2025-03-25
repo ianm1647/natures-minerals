@@ -2,17 +2,22 @@
   "item.naturesminerals.raw_uvarovite": "Raw Uvarovite",
   "item.naturesminerals.uvarovite_ingot": "Uvarovite Ingot",
   "item.naturesminerals.uvarovite_nugget": "Uvarovite Nugget",
+  "item.naturesminerals.uvarovite_dust": "Uvarovite Dust",
   "item.naturesminerals.raw_kunzite": "Raw Kunzite",
   "item.naturesminerals.kunzite_ingot": "Kunzite Ingot",
   "item.naturesminerals.kunzite_nugget": "Kunzite Nugget",
+  "item.naturesminerals.kunzite_dust": "Kunzite Dust",
   "item.naturesminerals.raw_stibnite": "Raw Stibnite",
   "item.naturesminerals.stibnite_ingot": "Stibnite Ingot",
   "item.naturesminerals.stibnite_nugget": "Stibnite Nugget",
+  "item.naturesminerals.stibnite_dust": "Stibnite Dust",
   "item.naturesminerals.raw_astrite": "Raw Astrite",
   "item.naturesminerals.astrite_ingot": "Astrite Ingot",
   "item.naturesminerals.astrite_nugget": "Astrite Nugget",
+  "item.naturesminerals.astrite_dust": "Astrite Dust",
   "item.naturesminerals.thounite_ingot": "Thounite Ingot",
   "item.naturesminerals.thounite_nugget": "Thounite Nugget",
+  "item.naturesminerals.thounite_dust": "Thounite Dust",
 
   "item.naturesminerals.blood_lava_bucket": "Blood Lava Bucket",
   "item.naturesminerals.scorching_blood_bucket": "Scorching Blood Bucket",
@@ -136,6 +141,15 @@
   "block.naturesminerals.raw_astrite_block": "Block of Raw Astrite",
   "block.naturesminerals.astrite_block": "Block of Astrite",
   "block.naturesminerals.thounite_block": "Block of Thounite",
+
+  "chemical.naturesminerals.dirty_uvarovite": "Dirty Uvarovite Slurry",
+  "chemical.naturesminerals.clean_uvarovite": "Clean Uvarovite Slurry",
+  "chemical.naturesminerals.dirty_kunzite": "Dirty Kunzite Slurry",
+  "chemical.naturesminerals.clean_kunzite": "Clean Kunzite Slurry",
+  "chemical.naturesminerals.dirty_stibnite": "Dirty Stibnite Slurry",
+  "chemical.naturesminerals.clean_stibnite": "Clean Stibnite Slurry",
+  "chemical.naturesminerals.dirty_astrite": "Dirty Astrite Slurry",
+  "chemical.naturesminerals.clean_astrite": "Clean Astrite Slurry",
 
   "itemGroup.naturesminerals": "Nature's Minerals"
 }

@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:dissolution",
+  "chemical_input": {
+    "amount": 2,
+    "chemical": "mekanism:sulfuric_acid"
+  },
+  "item_input": {
+    "count": 1,
+    "item": "naturesminerals:raw_astrite_block"
+  },
+  "output": {
+    "amount": 1000,
+    "id": "naturesminerals:dirty_astrite"
+  },
+  "per_tick_usage": true
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 400,
+  "experience": 9.0,
+  "ingredient": {
+    "item": "naturesminerals:raw_kunzite_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:kunzite_block"
+  }
+}

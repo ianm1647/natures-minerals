@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "storage_blocks",
+  "ingredients": [
+    {
+      "item": "naturesminerals:kunzite_ingot"
+    },
+    {
+      "item": "naturesminerals:kunzite_ingot"
+    },
+    {
+      "item": "naturesminerals:kunzite_ingot"
+    },
+    {
+      "item": "naturesminerals:kunzite_ingot"
+    },
+    {
+      "item": "naturesminerals:kunzite_ingot"
+    },
+    {
+      "item": "naturesminerals:kunzite_ingot"
+    },
+    {
+      "item": "naturesminerals:kunzite_ingot"
+    },
+    {
+      "item": "naturesminerals:kunzite_ingot"
+    },
+    {
+      "item": "naturesminerals:kunzite_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:kunzite_block"
+  }
+}

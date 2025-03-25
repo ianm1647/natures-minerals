@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "naturesminerals:astrite_axe"
+    },
+    {
+      "item": "naturesminerals:astrite_pickaxe"
+    },
+    {
+      "item": "naturesminerals:astrite_shovel"
+    },
+    {
+      "item": "naturesminerals:astrite_hoe"
+    },
+    {
+      "item": "naturesminerals:astrite_sword"
+    },
+    {
+      "item": "naturesminerals:astrite_helmet"
+    },
+    {
+      "item": "naturesminerals:astrite_chestplate"
+    },
+    {
+      "item": "naturesminerals:astrite_leggings"
+    },
+    {
+      "item": "naturesminerals:astrite_boots"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:astrite_nugget"
+  }
+}

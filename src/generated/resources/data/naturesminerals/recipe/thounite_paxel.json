@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "paxel",
+  "key": {
+    "a": {
+      "item": "naturesminerals:thounite_axe"
+    },
+    "i": {
+      "item": "minecraft:stick"
+    },
+    "p": {
+      "item": "naturesminerals:thounite_pickaxe"
+    },
+    "s": {
+      "item": "naturesminerals:thounite_shovel"
+    }
+  },
+  "pattern": [
+    "aps",
+    " i ",
+    " i "
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:thounite_paxel"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "storage_blocks",
+  "ingredients": [
+    {
+      "item": "naturesminerals:thounite_ingot"
+    },
+    {
+      "item": "naturesminerals:thounite_ingot"
+    },
+    {
+      "item": "naturesminerals:thounite_ingot"
+    },
+    {
+      "item": "naturesminerals:thounite_ingot"
+    },
+    {
+      "item": "naturesminerals:thounite_ingot"
+    },
+    {
+      "item": "naturesminerals:thounite_ingot"
+    },
+    {
+      "item": "naturesminerals:thounite_ingot"
+    },
+    {
+      "item": "naturesminerals:thounite_ingot"
+    },
+    {
+      "item": "naturesminerals:thounite_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:thounite_block"
+  }
+}

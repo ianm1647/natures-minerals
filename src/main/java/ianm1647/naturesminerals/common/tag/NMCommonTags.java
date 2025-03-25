@@ -71,6 +71,30 @@ public class NMCommonTags {
         public static final TagKey<Item> RODS_ASTRITE = itemTag("rods/astrite");
         public static final TagKey<Item> RODS_THOUNITE = itemTag("rods/thounite");
 
+        public static final TagKey<Item> CLUMPS = itemTag("clumps");
+        public static final TagKey<Item> UVAROVITE_CLUMP = itemTag("clumps/uvarovite");
+        public static final TagKey<Item> KUNZITE_CLUMP = itemTag("clumps/kunzite");
+        public static final TagKey<Item> STIBNITE_CLUMP = itemTag("clumps/stibnite");
+        public static final TagKey<Item> ASTRITE_CLUMP = itemTag("clumps/astrite");
+
+        public static final TagKey<Item> DIRTY_DUSTS = itemTag("dirty_dusts");
+        public static final TagKey<Item> UVAROVITE_DIRTY_DUST = itemTag("dirty_dusts/uvarovite");
+        public static final TagKey<Item> KUNZITE_DIRTY_DUST = itemTag("dirty_dusts/kunzite");
+        public static final TagKey<Item> STIBNITE_DIRTY_DUST = itemTag("dirty_dusts/stibnite");
+        public static final TagKey<Item> ASTRITE_DIRTY_DUST = itemTag("dirty_dusts/astrite");
+
+        public static final TagKey<Item> CRYSTALS = itemTag("crystals");
+        public static final TagKey<Item> UVAROVITE_CRYSTAL = itemTag("crystals/uvarovite");
+        public static final TagKey<Item> KUNZITE_CRYSTAL = itemTag("crystals/kunzite");
+        public static final TagKey<Item> STIBNITE_CRYSTAL = itemTag("crystals/stibnite");
+        public static final TagKey<Item> ASTRITE_CRYSTAL = itemTag("crystals/astrite");
+
+        public static final TagKey<Item> SHARDS = itemTag("shards");
+        public static final TagKey<Item> UVAROVITE_SHARD = itemTag("shards/uvarovite");
+        public static final TagKey<Item> KUNZITE_SHARD = itemTag("shards/kunzite");
+        public static final TagKey<Item> STIBNITE_SHARD = itemTag("shards/stibnite");
+        public static final TagKey<Item> ASTRITE_SHARD = itemTag("shards/astrite");
+
         //dusts
         public static final TagKey<Item> DUSTS_UVAROVITE = itemTag("dusts/uvarovite");
         public static final TagKey<Item> DUSTS_KUNZITE = itemTag("dusts/kunzite");

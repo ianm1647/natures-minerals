@@ -73,6 +73,19 @@ public class NMItemTagProvider extends ItemTagsProvider {
         tag(NMCommonTags.Items.NUGGETS_STIBNITE).add(NMItems.STIBNITE_NUGGET.get());
         tag(NMCommonTags.Items.NUGGETS_ASTRITE).add(NMItems.ASTRITE_NUGGET.get());
         tag(NMCommonTags.Items.NUGGETS_THOUNITE).add(NMItems.THOUNITE_NUGGET.get());
+
+        tag(Tags.Items.DUSTS).addTags(
+                NMCommonTags.Items.DUSTS_UVAROVITE,
+                NMCommonTags.Items.DUSTS_KUNZITE,
+                NMCommonTags.Items.DUSTS_STIBNITE,
+                NMCommonTags.Items.DUSTS_ASTRITE,
+                NMCommonTags.Items.DUSTS_THOUNITE
+        );
+        tag(NMCommonTags.Items.DUSTS_UVAROVITE).add(NMItems.UVAROVITE_DUST.get());
+        tag(NMCommonTags.Items.DUSTS_KUNZITE).add(NMItems.KUNZITE_DUST.get());
+        tag(NMCommonTags.Items.DUSTS_STIBNITE).add(NMItems.STIBNITE_DUST.get());
+        tag(NMCommonTags.Items.DUSTS_ASTRITE).add(NMItems.ASTRITE_DUST.get());
+        tag(NMCommonTags.Items.DUSTS_THOUNITE).add(NMItems.THOUNITE_DUST.get());
     }
 
     private void itemBlockTags() {
@@ -155,29 +168,74 @@ public class NMItemTagProvider extends ItemTagsProvider {
     }
 
     private void compatTags() {
-        this.tag(NMCompatTags.Items.CLUMPS)
-                .addOptional(loc(MekanismIntegration.Items.UVAROVITE_CLUMP.get()))
-                .addOptional(loc(MekanismIntegration.Items.KUNZITE_CLUMP.get()))
-                .addOptional(loc(MekanismIntegration.Items.STIBNITE_CLUMP.get()))
-                .addOptional(loc(MekanismIntegration.Items.ASTRITE_CLUMP.get()));
+        tag(NMCompatTags.Items.CLUMPS).addOptionalTags(
+                NMCommonTags.Items.UVAROVITE_CLUMP,
+                NMCommonTags.Items.KUNZITE_CLUMP,
+                NMCommonTags.Items.STIBNITE_CLUMP,
+                NMCommonTags.Items.ASTRITE_CLUMP
+        );
+        tag(NMCommonTags.Items.CLUMPS).addOptionalTags(
+                NMCommonTags.Items.UVAROVITE_CLUMP,
+                NMCommonTags.Items.KUNZITE_CLUMP,
+                NMCommonTags.Items.STIBNITE_CLUMP,
+                NMCommonTags.Items.ASTRITE_CLUMP
+        );
+        tag(NMCommonTags.Items.UVAROVITE_CLUMP).addOptional(loc(MekanismIntegration.Items.UVAROVITE_CLUMP.get()));
+        tag(NMCommonTags.Items.KUNZITE_CLUMP).addOptional(loc(MekanismIntegration.Items.KUNZITE_CLUMP.get()));
+        tag(NMCommonTags.Items.STIBNITE_CLUMP).addOptional(loc(MekanismIntegration.Items.STIBNITE_CLUMP.get()));
+        tag(NMCommonTags.Items.ASTRITE_CLUMP).addOptional(loc(MekanismIntegration.Items.ASTRITE_CLUMP.get()));
 
-        this.tag(NMCompatTags.Items.CRYSTALS)
-                .addOptional(loc(MekanismIntegration.Items.UVAROVITE_CRYSTAL.get()))
-                .addOptional(loc(MekanismIntegration.Items.KUNZITE_CRYSTAL.get()))
-                .addOptional(loc(MekanismIntegration.Items.STIBNITE_CRYSTAL.get()))
-                .addOptional(loc(MekanismIntegration.Items.ASTRITE_CRYSTAL.get()));
+        tag(NMCompatTags.Items.CRYSTALS).addOptionalTags(
+                NMCommonTags.Items.UVAROVITE_CRYSTAL,
+                NMCommonTags.Items.KUNZITE_CRYSTAL,
+                NMCommonTags.Items.STIBNITE_CRYSTAL,
+                NMCommonTags.Items.ASTRITE_CRYSTAL
+        );
+        tag(NMCommonTags.Items.CRYSTALS).addOptionalTags(
+                NMCommonTags.Items.UVAROVITE_CRYSTAL,
+                NMCommonTags.Items.KUNZITE_CRYSTAL,
+                NMCommonTags.Items.STIBNITE_CRYSTAL,
+                NMCommonTags.Items.ASTRITE_CRYSTAL
+        );
+        tag(NMCommonTags.Items.UVAROVITE_CRYSTAL).addOptional(loc(MekanismIntegration.Items.UVAROVITE_CRYSTAL.get()));
+        tag(NMCommonTags.Items.KUNZITE_CRYSTAL).addOptional(loc(MekanismIntegration.Items.KUNZITE_CRYSTAL.get()));
+        tag(NMCommonTags.Items.STIBNITE_CRYSTAL).addOptional(loc(MekanismIntegration.Items.STIBNITE_CRYSTAL.get()));
+        tag(NMCommonTags.Items.ASTRITE_CRYSTAL).addOptional(loc(MekanismIntegration.Items.ASTRITE_CRYSTAL.get()));
 
-        this.tag(NMCompatTags.Items.DIRTY_DUSTS)
-                .addOptional(loc(MekanismIntegration.Items.UVAROVITE_DIRTY_DUST.get()))
-                .addOptional(loc(MekanismIntegration.Items.KUNZITE_DIRTY_DUST.get()))
-                .addOptional(loc(MekanismIntegration.Items.STIBNITE_DIRTY_DUST.get()))
-                .addOptional(loc(MekanismIntegration.Items.ASTRITE_DIRTY_DUST.get()));
+        tag(NMCompatTags.Items.DIRTY_DUSTS).addOptionalTags(
+                NMCommonTags.Items.UVAROVITE_DIRTY_DUST,
+                NMCommonTags.Items.KUNZITE_DIRTY_DUST,
+                NMCommonTags.Items.STIBNITE_DIRTY_DUST,
+                NMCommonTags.Items.ASTRITE_DIRTY_DUST
+        );
+        tag(NMCommonTags.Items.DIRTY_DUSTS).addOptionalTags(
+                NMCommonTags.Items.UVAROVITE_DIRTY_DUST,
+                NMCommonTags.Items.KUNZITE_DIRTY_DUST,
+                NMCommonTags.Items.STIBNITE_DIRTY_DUST,
+                NMCommonTags.Items.ASTRITE_DIRTY_DUST
+        );
+        tag(NMCommonTags.Items.UVAROVITE_DIRTY_DUST).addOptional(loc(MekanismIntegration.Items.UVAROVITE_DIRTY_DUST.get()));
+        tag(NMCommonTags.Items.KUNZITE_DIRTY_DUST).addOptional(loc(MekanismIntegration.Items.KUNZITE_DIRTY_DUST.get()));
+        tag(NMCommonTags.Items.STIBNITE_DIRTY_DUST).addOptional(loc(MekanismIntegration.Items.STIBNITE_DIRTY_DUST.get()));
+        tag(NMCommonTags.Items.ASTRITE_DIRTY_DUST).addOptional(loc(MekanismIntegration.Items.ASTRITE_DIRTY_DUST.get()));
 
-        this.tag(NMCompatTags.Items.SHARDS)
-                .addOptional(loc(MekanismIntegration.Items.UVAROVITE_SHARD.get()))
-                .addOptional(loc(MekanismIntegration.Items.KUNZITE_SHARD.get()))
-                .addOptional(loc(MekanismIntegration.Items.STIBNITE_SHARD.get()))
-                .addOptional(loc(MekanismIntegration.Items.ASTRITE_SHARD.get()));
+        tag(NMCompatTags.Items.SHARDS).addOptionalTags(
+                NMCommonTags.Items.UVAROVITE_SHARD,
+                NMCommonTags.Items.KUNZITE_SHARD,
+                NMCommonTags.Items.STIBNITE_SHARD,
+                NMCommonTags.Items.ASTRITE_SHARD
+        );
+        tag(NMCommonTags.Items.SHARDS).addOptionalTags(
+                NMCommonTags.Items.UVAROVITE_SHARD,
+                NMCommonTags.Items.KUNZITE_SHARD,
+                NMCommonTags.Items.STIBNITE_SHARD,
+                NMCommonTags.Items.ASTRITE_SHARD
+        );
+        tag(NMCommonTags.Items.UVAROVITE_SHARD).addOptional(loc(MekanismIntegration.Items.UVAROVITE_SHARD.get()));
+        tag(NMCommonTags.Items.KUNZITE_SHARD).addOptional(loc(MekanismIntegration.Items.KUNZITE_SHARD.get()));
+        tag(NMCommonTags.Items.STIBNITE_SHARD).addOptional(loc(MekanismIntegration.Items.STIBNITE_SHARD.get()));
+        tag(NMCommonTags.Items.ASTRITE_SHARD).addOptional(loc(MekanismIntegration.Items.ASTRITE_SHARD.get()));
+
     }
 
     private ResourceLocation loc(Item item) {

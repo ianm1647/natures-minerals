@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "naturesminerals:thounite_axe"
+    },
+    {
+      "item": "naturesminerals:thounite_pickaxe"
+    },
+    {
+      "item": "naturesminerals:thounite_shovel"
+    },
+    {
+      "item": "naturesminerals:thounite_hoe"
+    },
+    {
+      "item": "naturesminerals:thounite_sword"
+    },
+    {
+      "item": "naturesminerals:thounite_helmet"
+    },
+    {
+      "item": "naturesminerals:thounite_chestplate"
+    },
+    {
+      "item": "naturesminerals:thounite_leggings"
+    },
+    {
+      "item": "naturesminerals:thounite_boots"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:thounite_nugget"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "naturesminerals:astrite_clump"
+  },
+  "output": {
+    "count": 1,
+    "id": "naturesminerals:astrite_dirty_dust"
+  }
+}

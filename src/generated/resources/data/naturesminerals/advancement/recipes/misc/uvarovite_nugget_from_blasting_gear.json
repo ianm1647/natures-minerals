@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gear": {
+      "conditions": {
+        "items": [
+          {
+            "items": "naturesminerals:uvarovite_axe"
+          },
+          {
+            "items": "naturesminerals:uvarovite_pickaxe"
+          },
+          {
+            "items": "naturesminerals:uvarovite_shovel"
+          },
+          {
+            "items": "naturesminerals:uvarovite_hoe"
+          },
+          {
+            "items": "naturesminerals:uvarovite_sword"
+          },
+          {
+            "items": "naturesminerals:uvarovite_helmet"
+          },
+          {
+            "items": "naturesminerals:uvarovite_chestplate"
+          },
+          {
+            "items": "naturesminerals:uvarovite_leggings"
+          },
+          {
+            "items": "naturesminerals:uvarovite_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "naturesminerals:uvarovite_nugget_from_blasting_gear"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gear"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "naturesminerals:uvarovite_nugget_from_blasting_gear"
+    ]
+  }
+}

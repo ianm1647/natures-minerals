@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "storage_blocks",
+  "ingredients": [
+    {
+      "item": "naturesminerals:uvarovite_ingot"
+    },
+    {
+      "item": "naturesminerals:uvarovite_ingot"
+    },
+    {
+      "item": "naturesminerals:uvarovite_ingot"
+    },
+    {
+      "item": "naturesminerals:uvarovite_ingot"
+    },
+    {
+      "item": "naturesminerals:uvarovite_ingot"
+    },
+    {
+      "item": "naturesminerals:uvarovite_ingot"
+    },
+    {
+      "item": "naturesminerals:uvarovite_ingot"
+    },
+    {
+      "item": "naturesminerals:uvarovite_ingot"
+    },
+    {
+      "item": "naturesminerals:uvarovite_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:uvarovite_block"
+  }
+}

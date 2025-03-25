@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "axe",
+  "key": {
+    "i": {
+      "item": "naturesminerals:stibnite_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "ii",
+    "is",
+    " s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:stibnite_axe"
+  }
+}

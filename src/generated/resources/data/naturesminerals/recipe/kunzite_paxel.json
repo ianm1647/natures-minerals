@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "paxel",
+  "key": {
+    "a": {
+      "item": "naturesminerals:kunzite_axe"
+    },
+    "i": {
+      "item": "minecraft:stick"
+    },
+    "p": {
+      "item": "naturesminerals:kunzite_pickaxe"
+    },
+    "s": {
+      "item": "naturesminerals:kunzite_shovel"
+    }
+  },
+  "pattern": [
+    "aps",
+    " i ",
+    " i "
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:kunzite_paxel"
+  }
+}

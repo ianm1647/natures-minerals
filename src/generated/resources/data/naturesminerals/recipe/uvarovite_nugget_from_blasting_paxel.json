@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "naturesminerals:uvarovite_paxel"
+  },
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:uvarovite_nugget"
+  }
+}

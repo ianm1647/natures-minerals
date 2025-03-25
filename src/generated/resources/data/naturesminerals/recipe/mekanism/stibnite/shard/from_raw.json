@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:injecting",
+  "chemical_input": {
+    "amount": 200,
+    "chemical": "mekanism:hydrogen_chloride"
+  },
+  "item_input": {
+    "count": 3,
+    "item": "naturesminerals:raw_stibnite"
+  },
+  "output": {
+    "count": 8,
+    "id": "naturesminerals:stibnite_shard"
+  },
+  "per_tick_usage": false
+}

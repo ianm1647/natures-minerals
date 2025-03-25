@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "naturesminerals:stibnite_paxel"
+  },
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:stibnite_nugget"
+  }
+}

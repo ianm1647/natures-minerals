@@ -1,4 +1,25 @@
-// 1.21.1	2025-03-24T16:25:16.6368612	Tags for minecraft:item mod id naturesminerals
+// 1.21.1	2025-03-25T03:54:49.4972854	Tags for minecraft:item mod id naturesminerals
+6076cad3c246147b6db2d37b7488f1f9c7e319d8 data/c/tags/item/clumps.json
+ce0d4ef095d23e134c77d50ed35e067d2d659395 data/c/tags/item/clumps/astrite.json
+e41e2520203e83351e96d0b6e897d93532ec2ef9 data/c/tags/item/clumps/kunzite.json
+70983df4244edb32b492563725b58ae4f360f90b data/c/tags/item/clumps/stibnite.json
+b25473421ea70b215c7588905fc6cddc1d306b17 data/c/tags/item/clumps/uvarovite.json
+532edfd143e28d35ba68dca8675a2e077547061a data/c/tags/item/crystals.json
+2078421a1e30b2eb3806c8ceff6cd3a66218f97c data/c/tags/item/crystals/astrite.json
+979e4bad57611efaf49df092c55d37ea34cb79f0 data/c/tags/item/crystals/kunzite.json
+9b6fa6ad7719bbaa734f1a776a94d6eda68be543 data/c/tags/item/crystals/stibnite.json
+6ae6b5e1b082a0dfaf69430f01f664e156194a09 data/c/tags/item/crystals/uvarovite.json
+cfb50c22f517b955553293c35498df04932260ad data/c/tags/item/dirty_dusts.json
+4300f8edc936b28f49ed4c85719eacf5aa0a4ced data/c/tags/item/dirty_dusts/astrite.json
+fba9161f3092c7210479dce05c7a80b4d7b4be10 data/c/tags/item/dirty_dusts/kunzite.json
+063357090487d04242dce734d2c4c88cb71f7062 data/c/tags/item/dirty_dusts/stibnite.json
+613abd949b430e9d1bc82daf67ab038a50628daa data/c/tags/item/dirty_dusts/uvarovite.json
+c957befa358a10cffbf0c7b23745192599086b31 data/c/tags/item/dusts.json
+ce48b447a70418f71936393f62775d96951d0002 data/c/tags/item/dusts/astrite.json
+807cb7f96bb692da64e4c6f850e1efe812f58589 data/c/tags/item/dusts/kunzite.json
+7692e997d79ce7d2393dba264fc36c82ab6a3b0d data/c/tags/item/dusts/stibnite.json
+e7ca4b0e13a5d3b79b47e5702a00034ad7167dfc data/c/tags/item/dusts/thounite.json
+6a719a7b64e3bc290686f18f5d9c8699c1e5f54a data/c/tags/item/dusts/uvarovite.json
 d18ea5a81f5c08a62a51191c655441f454e24be0 data/c/tags/item/ingots.json
 c0890bbf8a3d067589063446622895a9c9ffe71f data/c/tags/item/ingots/astrite.json
 1a3ef0dfbb14ff266c9ba77e80ecff487f454ef3 data/c/tags/item/ingots/kunzite.json
@@ -21,6 +42,11 @@ e62ce7c6d917fd6638a2d69d4eaa690508a8aaee data/c/tags/item/raw_materials.json
 09febc4ded3a3d45128f6b06482b868a119b9cf7 data/c/tags/item/raw_materials/kunzite.json
 f289138fb4a1d463181f982d438ce8f7fe3a0116 data/c/tags/item/raw_materials/stibnite.json
 23c22f22f6f461b35e0a356948228158bcafc3e2 data/c/tags/item/raw_materials/uvarovite.json
+9d79fc230026936a428ba4aaff42c2378561af98 data/c/tags/item/shards.json
+580b69d8002bc9c67d2c77e3488a52e406c826ce data/c/tags/item/shards/astrite.json
+a4b580cb9d3e8cc5ee6689dd7178f8d309a7abbf data/c/tags/item/shards/kunzite.json
+a326d8e06409da6fd3d6a55f80d5b98c35b41f83 data/c/tags/item/shards/stibnite.json
+54af4f0f6712653d8269eb6371839f9feefd5b6a data/c/tags/item/shards/uvarovite.json
 111568ede2ca2ac9baf53b34b953720bfcbf7d7f data/c/tags/item/storage_blocks.json
 c3a5c66a2c60e955807a61e0264b3a74ee091aac data/c/tags/item/storage_blocks/astrite.json
 96dd78c90477cc2ec0bcc325b1acaf22cdb7bc5d data/c/tags/item/storage_blocks/kunzite.json
@@ -31,10 +57,10 @@ a26e0fa5105ae8e5128337fb323864bd0a7333fd data/c/tags/item/storage_blocks/raw_uva
 6a0a068dc8b7473cd787e15fa2bcc85c09c3ac51 data/c/tags/item/storage_blocks/stibnite.json
 8c24289d10264384c4c94ceff4dc98ef658c71ea data/c/tags/item/storage_blocks/thounite.json
 6aa8204ea43661c12afe34c998fa037143d0f3db data/c/tags/item/storage_blocks/uvarovite.json
-c24690ccf914c335b6709cce94fae3a59b8d6923 data/mekanism/tags/item/clumps.json
-4a29c90e3fed4157ebc23347609e8d63ccbda544 data/mekanism/tags/item/crystals.json
-44180f0bb9ad52bbf96cf00f5d971c92ceda9656 data/mekanism/tags/item/dirty_dusts.json
-355b688fede6040c3fe1bc1659c27430b05d9caf data/mekanism/tags/item/shards.json
+6076cad3c246147b6db2d37b7488f1f9c7e319d8 data/mekanism/tags/item/clumps.json
+532edfd143e28d35ba68dca8675a2e077547061a data/mekanism/tags/item/crystals.json
+cfb50c22f517b955553293c35498df04932260ad data/mekanism/tags/item/dirty_dusts.json
+9d79fc230026936a428ba4aaff42c2378561af98 data/mekanism/tags/item/shards.json
 d91992dcc6405296d77724b682669402b775cfd4 data/minecraft/tags/item/axes.json
 2e745c191f11c450dcc78bf3398deef1f3623eba data/minecraft/tags/item/chest_armor.json
 241fee11e3c6702a2fe4070246fbdcb1fa1c6ff7 data/minecraft/tags/item/foot_armor.json

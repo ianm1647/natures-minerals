@@ -165,17 +165,26 @@ public class NMItems {
         RAW_UVAROVITE = registerWithTab("raw_uvarovite", () -> new Item(basicItem()));
         UVAROVITE_INGOT = registerWithTab("uvarovite_ingot", () -> new Item(basicItem()));
         UVAROVITE_NUGGET = registerWithTab("uvarovite_nugget", () -> new Item(basicItem()));
+        UVAROVITE_DUST = registerWithTab("uvarovite_dust", () -> new Item(basicItem()));
+
         RAW_KUNZITE = registerWithTab("raw_kunzite", () -> new Item(basicItem()));
         KUNZITE_INGOT = registerWithTab("kunzite_ingot", () -> new Item(basicItem()));
         KUNZITE_NUGGET = registerWithTab("kunzite_nugget", () -> new Item(basicItem()));
+        KUNZITE_DUST = registerWithTab("kunzite_dust", () -> new Item(basicItem()));
+
         RAW_STIBNITE = registerWithTab("raw_stibnite", () -> new Item(basicItem()));
         STIBNITE_INGOT = registerWithTab("stibnite_ingot", () -> new Item(basicItem()));
         STIBNITE_NUGGET = registerWithTab("stibnite_nugget", () -> new Item(basicItem()));
+        STIBNITE_DUST = registerWithTab("stibnite_dust", () -> new Item(basicItem()));
+
         RAW_ASTRITE = registerWithTab("raw_astrite", () -> new Item(basicItem()));
         ASTRITE_INGOT = registerWithTab("astrite_ingot", () -> new Item(basicItem()));
         ASTRITE_NUGGET = registerWithTab("astrite_nugget", () -> new Item(basicItem()));
+        ASTRITE_DUST = registerWithTab("astrite_dust", () -> new Item(basicItem()));
+
         THOUNITE_INGOT = registerWithTab("thounite_ingot", () -> new Item(basicItem()));
         THOUNITE_NUGGET = registerWithTab("thounite_nugget", () -> new Item(basicItem()));
+        THOUNITE_DUST = registerWithTab("thounite_dust", () -> new Item(basicItem()));
 
         UVAROVITE_SWORD = registerWithTab("uvarovite_sword", () -> new ModSwordItem(NMTiers.UVAROVITE, basicItem()));
         UVAROVITE_SHOVEL = registerWithTab("uvarovite_shovel", () -> new ModShovelItem(NMTiers.UVAROVITE, basicItem()));
@@ -231,6 +240,8 @@ public class NMItems {
         THOUNITE_CHESTPLATE = registerWithTab("thounite_chestplate", () -> new ArmorItem(NMMaterials.THOUNITE, ArmorItem.Type.CHESTPLATE, basicItem()));
         THOUNITE_LEGGINGS = registerWithTab("thounite_leggings", () -> new ArmorItem(NMMaterials.THOUNITE, ArmorItem.Type.LEGGINGS, basicItem()));
         THOUNITE_BOOTS = registerWithTab("thounite_boots", () -> new ArmorItem(NMMaterials.THOUNITE, ArmorItem.Type.BOOTS, basicItem()));
+
+
 
         BLOOD_LAVA_BUCKET = registerWithTab("blood_lava_bucket", () -> new BucketItem(NMFluids.BLOOD_LAVA.get(),
                 new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));

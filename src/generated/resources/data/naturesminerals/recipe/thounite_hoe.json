@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "hoe",
+  "key": {
+    "i": {
+      "item": "naturesminerals:thounite_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "ii",
+    " s",
+    " s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:thounite_hoe"
+  }
+}

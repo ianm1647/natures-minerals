@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_material": {
+      "conditions": {
+        "items": [
+          {
+            "items": "naturesminerals:raw_uvarovite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "naturesminerals:uvarovite_ingot_from_blasting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_material"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "naturesminerals:uvarovite_ingot_from_blasting"
+    ]
+  }
+}

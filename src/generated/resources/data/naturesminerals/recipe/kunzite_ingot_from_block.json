@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ingot",
+  "ingredients": [
+    {
+      "item": "naturesminerals:kunzite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "naturesminerals:kunzite_ingot"
+  }
+}

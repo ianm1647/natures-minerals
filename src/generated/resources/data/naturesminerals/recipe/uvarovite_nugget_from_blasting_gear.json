@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "naturesminerals:uvarovite_axe"
+    },
+    {
+      "item": "naturesminerals:uvarovite_pickaxe"
+    },
+    {
+      "item": "naturesminerals:uvarovite_shovel"
+    },
+    {
+      "item": "naturesminerals:uvarovite_hoe"
+    },
+    {
+      "item": "naturesminerals:uvarovite_sword"
+    },
+    {
+      "item": "naturesminerals:uvarovite_helmet"
+    },
+    {
+      "item": "naturesminerals:uvarovite_chestplate"
+    },
+    {
+      "item": "naturesminerals:uvarovite_leggings"
+    },
+    {
+      "item": "naturesminerals:uvarovite_boots"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:uvarovite_nugget"
+  }
+}

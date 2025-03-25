@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gear": {
+      "conditions": {
+        "items": [
+          {
+            "items": "naturesminerals:stibnite_axe"
+          },
+          {
+            "items": "naturesminerals:stibnite_pickaxe"
+          },
+          {
+            "items": "naturesminerals:stibnite_shovel"
+          },
+          {
+            "items": "naturesminerals:stibnite_hoe"
+          },
+          {
+            "items": "naturesminerals:stibnite_sword"
+          },
+          {
+            "items": "naturesminerals:stibnite_helmet"
+          },
+          {
+            "items": "naturesminerals:stibnite_chestplate"
+          },
+          {
+            "items": "naturesminerals:stibnite_leggings"
+          },
+          {
+            "items": "naturesminerals:stibnite_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "naturesminerals:stibnite_nugget_from_blasting_gear"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gear"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "naturesminerals:stibnite_nugget_from_blasting_gear"
+    ]
+  }
+}

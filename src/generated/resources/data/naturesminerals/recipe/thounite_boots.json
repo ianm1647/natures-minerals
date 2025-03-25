@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "boots",
+  "key": {
+    "i": {
+      "item": "naturesminerals:thounite_ingot"
+    }
+  },
+  "pattern": [
+    "i i",
+    "i i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:thounite_boots"
+  }
+}

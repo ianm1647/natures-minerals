@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "sword",
+  "key": {
+    "i": {
+      "item": "naturesminerals:uvarovite_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "i",
+    "i",
+    "s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:uvarovite_sword"
+  }
+}

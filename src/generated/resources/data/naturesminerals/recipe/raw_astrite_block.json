@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "storage_blocks",
+  "ingredients": [
+    {
+      "item": "naturesminerals:raw_astrite"
+    },
+    {
+      "item": "naturesminerals:raw_astrite"
+    },
+    {
+      "item": "naturesminerals:raw_astrite"
+    },
+    {
+      "item": "naturesminerals:raw_astrite"
+    },
+    {
+      "item": "naturesminerals:raw_astrite"
+    },
+    {
+      "item": "naturesminerals:raw_astrite"
+    },
+    {
+      "item": "naturesminerals:raw_astrite"
+    },
+    {
+      "item": "naturesminerals:raw_astrite"
+    },
+    {
+      "item": "naturesminerals:raw_astrite"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:raw_astrite_block"
+  }
+}

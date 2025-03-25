@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ingot",
+  "ingredients": [
+    {
+      "item": "naturesminerals:uvarovite_nugget"
+    },
+    {
+      "item": "naturesminerals:uvarovite_nugget"
+    },
+    {
+      "item": "naturesminerals:uvarovite_nugget"
+    },
+    {
+      "item": "naturesminerals:uvarovite_nugget"
+    },
+    {
+      "item": "naturesminerals:uvarovite_nugget"
+    },
+    {
+      "item": "naturesminerals:uvarovite_nugget"
+    },
+    {
+      "item": "naturesminerals:uvarovite_nugget"
+    },
+    {
+      "item": "naturesminerals:uvarovite_nugget"
+    },
+    {
+      "item": "naturesminerals:uvarovite_nugget"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:uvarovite_ingot"
+  }
+}

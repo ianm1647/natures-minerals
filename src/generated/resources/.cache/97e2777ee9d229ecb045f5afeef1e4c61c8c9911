@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-24T14:37:43.3890818	Item Models: naturesminerals
+// 1.21.1	2025-03-24T20:35:29.942127	Item Models: naturesminerals
 28b5d66e762979df232f7687ff1ff7e44cfa32fa assets/naturesminerals/models/item/astrite_axe.json
 61f8ab74d2da8bac2af25aa7195156e0aff34609 assets/naturesminerals/models/item/astrite_block.json
 7cd7286a2f3e1746aeac23fea245a43927d2f159 assets/naturesminerals/models/item/astrite_boots.json
@@ -6,6 +6,7 @@ ddf9d91d1f5a3cad3ccb8d6cc5d9f47a137dbbf0 assets/naturesminerals/models/item/astr
 316b5764df95d1af2b9451994afa67e7e4f6b69d assets/naturesminerals/models/item/astrite_clump.json
 8b40e9c88ac83852f5e90ba362cfe627d10b31d0 assets/naturesminerals/models/item/astrite_crystal.json
 093bccd945ca821214976f7b338c5e21fd02dd74 assets/naturesminerals/models/item/astrite_dirty_dust.json
+43d0fe6e6c72084bec0617371581331d9c263568 assets/naturesminerals/models/item/astrite_dust.json
 491adf4ca32625a62e6768b7928f3d8325a5cdd1 assets/naturesminerals/models/item/astrite_helmet.json
 b68408a241a820cea860bbadbc087ed6839a6be6 assets/naturesminerals/models/item/astrite_hoe.json
 a57f645c589299513d178e8c2e4590e3418ce384 assets/naturesminerals/models/item/astrite_ingot.json
@@ -26,6 +27,7 @@ d16bda4c0b663fa29240688de2effdd3b6a54329 assets/naturesminerals/models/item/kunz
 5cf8c0b63807137f1df42f135191feb07b2560db assets/naturesminerals/models/item/kunzite_clump.json
 c9aa90d976b10ead9a7e91f9c93c7d43c2ad3b7e assets/naturesminerals/models/item/kunzite_crystal.json
 5809842d7f93efb1fe33ddd457a61c5d824466c2 assets/naturesminerals/models/item/kunzite_dirty_dust.json
+8ea346dad158212b6c9cc6cb6d19487ad9c8b85b assets/naturesminerals/models/item/kunzite_dust.json
 812047db501b92fee41b641df8b91acdb54ff189 assets/naturesminerals/models/item/kunzite_helmet.json
 14f855d91a5d11440de65c234ddd480906d1dec6 assets/naturesminerals/models/item/kunzite_hoe.json
 8ef345a158c9ff450e1616c6072848216f1300e6 assets/naturesminerals/models/item/kunzite_ingot.json
@@ -52,6 +54,7 @@ d5b2bcba90fe7aad21ecf9b517dd28dd5dd60878 assets/naturesminerals/models/item/stib
 8c5274572d120d0656c17ea2b994fe8ef9578d8e assets/naturesminerals/models/item/stibnite_clump.json
 0370ab4770e5a85e9a70a12070da5b2bd1ceea39 assets/naturesminerals/models/item/stibnite_crystal.json
 eb7c71a03f0eb335ce77f4676e0e19aea0cdca36 assets/naturesminerals/models/item/stibnite_dirty_dust.json
+a7cf45cd811180c2135c33a3ff9d26780eddce3f assets/naturesminerals/models/item/stibnite_dust.json
 4a117586f6292dbc20b399981a07171fe7058978 assets/naturesminerals/models/item/stibnite_helmet.json
 f5cc35744dbcb46a4b16df34215f502ab6e63218 assets/naturesminerals/models/item/stibnite_hoe.json
 902bdc196133f611821b191ac660d51f3a9c7993 assets/naturesminerals/models/item/stibnite_ingot.json
@@ -67,6 +70,7 @@ dbb8e3a8511776cde98429fd9e3963dbce1f2b2d assets/naturesminerals/models/item/stib
 431f850131f2803961d1a091568516b2f7af0bd8 assets/naturesminerals/models/item/thounite_block.json
 f29a5b4bd8631392ca3f9031d06324014aa185d4 assets/naturesminerals/models/item/thounite_boots.json
 0dbc6a1aed40ee65b99b8a57e4d3ffc1b11a906d assets/naturesminerals/models/item/thounite_chestplate.json
+3f4792040e354c2ac79e9c94fcbdb32d25ba09ed assets/naturesminerals/models/item/thounite_dust.json
 c2b12a8ef4f9bc9db1e7bf6d15c55ece871ccb5c assets/naturesminerals/models/item/thounite_helmet.json
 eae61ed63225e88ab1a59cdfde32ad08245b0930 assets/naturesminerals/models/item/thounite_hoe.json
 f26a646634a6e89b7a2bba2fec086b8421d8273a assets/naturesminerals/models/item/thounite_ingot.json
@@ -83,6 +87,7 @@ bfc6e516cfd03a3f29120fdab6f8aa4abe64ca06 assets/naturesminerals/models/item/uvar
 a90f009f415178c2f2a7e850fa2b4b0290d45f43 assets/naturesminerals/models/item/uvarovite_clump.json
 c965fb4a68ead353dbd884e6adb691bf5688c3bf assets/naturesminerals/models/item/uvarovite_crystal.json
 56092eeb708a5fa3bb94a6e6c95b15f0c5876d16 assets/naturesminerals/models/item/uvarovite_dirty_dust.json
+a9035e59ac596ec2bc42a8237f026f98a06a4d91 assets/naturesminerals/models/item/uvarovite_dust.json
 63c0c585a1a7aa93e1bd7563c42ad79d78a2c049 assets/naturesminerals/models/item/uvarovite_helmet.json
 90b0b138485f9f16c25a1e71917809ee0c330c43 assets/naturesminerals/models/item/uvarovite_hoe.json
 3ee80dc5d68bb0306267b7e99319dc96b2beab60 assets/naturesminerals/models/item/uvarovite_ingot.json
