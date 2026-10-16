@@ -2,6 +2,7 @@ package ianm1647.naturesminerals.data.recipe;
 
 import com.simibubi.create.api.data.recipe.PressingRecipeGen;
 import ianm1647.naturesminerals.NaturesMinerals;
+import ianm1647.naturesminerals.common.registry.NMItems;
 import ianm1647.naturesminerals.integration.create.CreateIntegration;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -14,7 +15,7 @@ public class CreateRecipes {
 
     public static class Pressing extends PressingRecipeGen {
         {
-            CreateIntegration.Items.CREATEITEM.getEntries()
+            NMItems.ITEMS.getEntries()
                     .forEach((item) -> {
                         String name = item.getId().getPath();
                         if (name.contains("sheet")) {

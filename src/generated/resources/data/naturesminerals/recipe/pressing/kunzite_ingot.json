@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "naturesminerals:kunzite_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "naturesminerals:kunzite_sheet"
+    }
+  ]
+}

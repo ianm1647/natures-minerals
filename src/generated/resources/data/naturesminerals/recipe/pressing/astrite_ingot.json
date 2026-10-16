@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "naturesminerals:astrite_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "naturesminerals:astrite_sheet"
+    }
+  ]
+}
