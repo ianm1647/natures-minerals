@@ -26,9 +26,7 @@ public class NMBlockLootProvider extends BlockLootSubProvider {
                     String name = block.getId().getPath();
                     return !name.contains("ore");
                 })
-                .forEach((block) -> {
-                    dropSelf(block.get());
-                });
+                .forEach((block) -> dropSelf(block.get()));
 
         this.add(NMBlocks.UVAROVITE_ORE.get(), block -> createOreDrop(block, NMItems.RAW_UVAROVITE.get()));
         this.add(NMBlocks.DEEPSLATE_UVAROVITE_ORE.get(), block -> createOreDrop(block, NMItems.RAW_UVAROVITE.get()));

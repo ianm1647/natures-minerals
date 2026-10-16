@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "apples",
+  "key": {
+    "a": {
+      "item": "minecraft:apple"
+    },
+    "i": {
+      "item": "naturesminerals:kunzite_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "iai",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:kunzite_apple"
+  }
+}

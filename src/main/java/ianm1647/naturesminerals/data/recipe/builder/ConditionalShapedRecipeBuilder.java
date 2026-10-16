@@ -30,7 +30,7 @@ public class ConditionalShapedRecipeBuilder implements RecipeBuilder {
     private final List<String> rows;
     private final Map<Character, Ingredient> key;
     private final Map<String, Criterion<?>> criteria;
-    private ICondition condition;
+    private ICondition[] condition;
     @Nullable
     private String group;
     private boolean showNotification;
@@ -90,7 +90,7 @@ public class ConditionalShapedRecipeBuilder implements RecipeBuilder {
         }
     }
 
-    public ConditionalShapedRecipeBuilder conditions(ICondition condition) {
+    public ConditionalShapedRecipeBuilder conditions(ICondition... condition) {
         this.condition = condition;
         return this;
     }

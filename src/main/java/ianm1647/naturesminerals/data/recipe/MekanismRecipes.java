@@ -81,28 +81,28 @@ public class MekanismRecipes {
                                         IngredientCreatorAccess.chemicalStack().fromHolder(MekanismChemicals.OXYGEN, 200),
                                         new ItemStack(item.get(), 2), false)
                                 .addCondition(new ModLoadedCondition("mekanism"))
-                                .build(output, mekLoc(name.replace("_clump", "") + "/clump/from_raw"));
+                                .build(output, mekLoc(name.replace("_clump", "/clump") + "/from_raw"));
                         ItemStackChemicalToItemStackRecipeBuilder.purifying(
                                         IngredientCreatorAccess.item().from(
                                                 BuiltInRegistries.ITEM.get(NaturesMinerals.loc("raw_" + name.replace("_clump", "") + "_block"))),
                                         IngredientCreatorAccess.chemicalStack().fromHolder(MekanismChemicals.OXYGEN, 400),
                                         new ItemStack(item.get(), 18), false)
                                 .addCondition(new ModLoadedCondition("mekanism"))
-                                .build(output, mekLoc(name.replace("_clump", "") + "/clump/from_raw_block"));
+                                .build(output, mekLoc(name.replace("_clump", "/clump") + "/from_raw_block"));
                         ItemStackChemicalToItemStackRecipeBuilder.purifying(
                                         IngredientCreatorAccess.item().from(ItemTags.create(
                                                 ResourceLocation.fromNamespaceAndPath("c", "ores/" + name.replace("_clump", "")))),
                                         IngredientCreatorAccess.chemicalStack().fromHolder(MekanismChemicals.OXYGEN, 200),
                                         new ItemStack(item.get(), 3), false)
                                 .addCondition(new ModLoadedCondition("mekanism"))
-                                .build(output, mekLoc(name.replace("_clump", "") + "/clump/from_ore"));
+                                .build(output, mekLoc(name.replace("_clump", "/clump") + "/from_ore"));
                         ItemStackChemicalToItemStackRecipeBuilder.purifying(
                                         IngredientCreatorAccess.item().from(
                                                 BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_clump", "") + "_shard"))),
                                         IngredientCreatorAccess.chemicalStack().fromHolder(MekanismChemicals.OXYGEN, 200),
                                         item.get().getDefaultInstance(), false)
                                 .addCondition(new ModLoadedCondition("mekanism"))
-                                .build(output, mekLoc(name.replace("_clump", "") + "/clump/from_shard"));
+                                .build(output, mekLoc(name.replace("_clump", "/clump") + "/from_shard"));
                     }
                     if (name.contains("shard")) {
                         ItemStackChemicalToItemStackRecipeBuilder.injecting(
@@ -111,28 +111,28 @@ public class MekanismRecipes {
                                 IngredientCreatorAccess.chemicalStack().fromHolder(MekanismChemicals.HYDROGEN_CHLORIDE, 200),
                                 new ItemStack(item.get(), 8), false)
                                 .addCondition(new ModLoadedCondition("mekanism"))
-                                .build(output, mekLoc(name.replace("_shard", "") + "/shard/from_raw"));
+                                .build(output, mekLoc(name.replace("_shard", "/shard") + "/from_raw"));
                         ItemStackChemicalToItemStackRecipeBuilder.injecting(
                                 IngredientCreatorAccess.item().from(
                                         BuiltInRegistries.ITEM.get(NaturesMinerals.loc("raw_" + name.replace("_shard", "") + "_block")), 1),
                                 IngredientCreatorAccess.chemicalStack().fromHolder(MekanismChemicals.HYDROGEN_CHLORIDE, 400),
                                 new ItemStack(item.get(), 24), false)
                                 .addCondition(new ModLoadedCondition("mekanism"))
-                                .build(output, mekLoc(name.replace("_shard", "") + "/shard/from_raw_block"));
+                                .build(output, mekLoc(name.replace("_shard", "/shard") + "/from_raw_block"));
                         ItemStackChemicalToItemStackRecipeBuilder.injecting(
                                 IngredientCreatorAccess.item().from(ItemTags.create(
                                         ResourceLocation.fromNamespaceAndPath("c", "ores/" + name.replace("_shard", "")))),
                                 IngredientCreatorAccess.chemicalStack().fromHolder(MekanismChemicals.HYDROGEN_CHLORIDE, 200),
                                 new ItemStack(item.get(), 4), false)
                                 .addCondition(new ModLoadedCondition("mekanism"))
-                                .build(output, mekLoc(name.replace("_shard", "") + "/shard/from_ore"));
+                                .build(output, mekLoc(name.replace("_shard", "/shard") + "/from_ore"));
                         ItemStackChemicalToItemStackRecipeBuilder.injecting(
                                 IngredientCreatorAccess.item().from(
                                         BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_shard", "") + "_crystal")), 1),
                                 IngredientCreatorAccess.chemicalStack().fromHolder(MekanismChemicals.HYDROGEN_CHLORIDE, 200),
                                 item.get().getDefaultInstance(), false)
                                 .addCondition(new ModLoadedCondition("mekanism"))
-                                .build(output, mekLoc(name.replace("_shard", "") + "/shard/from_crystal"));
+                                .build(output, mekLoc(name.replace("_shard", "/shard") + "/from_crystal"));
                     }
                     if (name.contains("crystal")) {
                         ChemicalCrystallizerRecipeBuilder.crystallizing(

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "naturesminerals:uvarovite_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "naturesminerals:uvarovite_sheet"
+    }
+  ]
+}

@@ -30,7 +30,7 @@ public class ConditionalCookingRecipeBuilder implements RecipeBuilder {
     @Nullable
     private String group;
     private final AbstractCookingRecipe.Factory<?> factory;
-    private ICondition condition;
+    private ICondition[] condition;
 
     private ConditionalCookingRecipeBuilder(RecipeCategory category, CookingBookCategory bookCategory, ItemLike result, Ingredient ingredient, float experience, int cookingTime, AbstractCookingRecipe.Factory<?> factory) {
         this(category, bookCategory, new ItemStack(result), ingredient, experience, cookingTime, factory);
@@ -46,7 +46,6 @@ public class ConditionalCookingRecipeBuilder implements RecipeBuilder {
         this.experience = exp;
         this.cookingTime = cookingTime;
         this.factory = factory;
-        this.condition = condition;
     }
 
     public static <T extends AbstractCookingRecipe> ConditionalCookingRecipeBuilder generic(Ingredient ingredient, RecipeCategory category, ItemLike result, float experience, int cookingTime, RecipeSerializer<T> cookingSerializer, AbstractCookingRecipe.Factory<T> factory) {
@@ -94,7 +93,7 @@ public class ConditionalCookingRecipeBuilder implements RecipeBuilder {
         return this;
     }
 
-    public ConditionalCookingRecipeBuilder conditions(ICondition condition) {
+    public ConditionalCookingRecipeBuilder conditions(ICondition... condition) {
         this.condition = condition;
         return this;
     }

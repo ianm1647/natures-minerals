@@ -2,6 +2,7 @@ package ianm1647.naturesminerals.data;
 
 import ianm1647.naturesminerals.NaturesMinerals;
 import ianm1647.naturesminerals.common.registry.NMItems;
+import ianm1647.naturesminerals.integration.create.CreateIntegration;
 import ianm1647.naturesminerals.integration.farmersdelight.FarmersDelightIntegration;
 import ianm1647.naturesminerals.integration.farmersdelight.ModKnifeItem;
 import ianm1647.naturesminerals.integration.mekanism.MekanismIntegration;
@@ -59,8 +60,13 @@ public class NMItemModelProvider extends ItemModelProvider {
             if (item.get() instanceof ModKnifeItem) {
                 this.handheldItem(NaturesMinerals.loc(name));
             } else {
-                this.withExistingParent(name, generated).texture("layer0", this.resLoc("mekanism/" + name));
+                this.withExistingParent(name, generated).texture("layer0", this.resLoc("farmersdelight/" + name));
             }
+        });
+
+        CreateIntegration.Items.CREATEITEM.getEntries().forEach((item) -> {
+            String name = item.getId().getPath();
+            this.withExistingParent(name, generated).texture("layer0", this.resLoc("create/" + name));
         });
 
 

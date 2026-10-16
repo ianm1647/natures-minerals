@@ -28,10 +28,15 @@
   "item.naturesminerals.molten_thounite_bucket": "Molten Thounite Bucket",
 
   "item.naturesminerals.uvarovite_apple": "Uvarovite Apple",
+  "item.naturesminerals.uvarovite_apple.description": "When eaten, poisons enemies around you in a small radius",
   "item.naturesminerals.kunzite_apple": "Kunzite Apple",
+  "item.naturesminerals.kunzite_apple.description": "When eaten, heals allies and animals around you in a large radius",
   "item.naturesminerals.stibnite_apple": "Stibnite Apple",
+  "item.naturesminerals.stibnite_apple.description": "When eaten while on fire or in the Nether, extinguishes you",
   "item.naturesminerals.astrite_apple": "Astrite Apple",
+  "item.naturesminerals.astrite_apple.description": "When eaten, pushes away all enemies around you in a small radius",
   "item.naturesminerals.thounite_apple": "Thounite Apple",
+  "item.naturesminerals.thounite_apple.description": "When eaten, causes thunderstorms",
 
   "item.naturesminerals.uvarovite_sword": "Uvarovite Sword",
   "item.naturesminerals.uvarovite_shovel": "Uvarovite Shovel",
@@ -118,6 +123,16 @@
   "item.naturesminerals.astrite_dirty_dust": "Dirty Astrite Dust",
   "item.naturesminerals.astrite_crystal": "Astrite Crystal",
 
+  "item.naturesminerals.uvarovite_sheet": "Uvarovite Sheet",
+
+  "item.naturesminerals.kunzite_sheet": "Kunzite Sheet",
+
+  "item.naturesminerals.stibnite_sheet": "Stibnite Sheet",
+
+  "item.naturesminerals.astrite_sheet": "Astrite Sheet",
+
+  "item.naturesminerals.thounite_sheet": "Thounite Sheet",
+
   "block.naturesminerals.blood_lava": "Blood Lava",
   "block.naturesminerals.scorching_blood": "Scorching Blood",
   "block.naturesminerals.molten_uvarovite": "Molten Uvarovite",
@@ -150,6 +165,8 @@
   "chemical.naturesminerals.clean_stibnite": "Clean Stibnite Slurry",
   "chemical.naturesminerals.dirty_astrite": "Dirty Astrite Slurry",
   "chemical.naturesminerals.clean_astrite": "Clean Astrite Slurry",
+
+  "entity.naturesminerals.nonfire_lightning_bolt": "Lightning Bolt",
 
   "itemGroup.naturesminerals": "Nature's Minerals"
 }

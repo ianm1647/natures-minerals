@@ -1,6 +1,7 @@
 package ianm1647.naturesminerals.data;
 
 import ianm1647.naturesminerals.NaturesMinerals;
+import ianm1647.naturesminerals.data.recipe.CreateRecipes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -16,8 +17,7 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 @EventBusSubscriber(
-        modid = NaturesMinerals.MODID,
-        bus = EventBusSubscriber.Bus.MOD
+        modid = NaturesMinerals.MODID
 )
 public class NMDataGenerator {
     public NMDataGenerator() {
@@ -40,6 +40,8 @@ public class NMDataGenerator {
 
         generator.addProvider(event.includeServer(), new LootTableProvider(output, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(NMBlockLootProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
         generator.addProvider(event.includeServer(), new NMPackProvider(output, lookupProvider));
+
+        generator.addProvider(event.includeServer(), new CreateRecipes.Pressing(output, lookupProvider));
 
     }
 }

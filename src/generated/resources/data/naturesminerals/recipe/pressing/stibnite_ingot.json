@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "naturesminerals:stibnite_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "naturesminerals:stibnite_sheet"
+    }
+  ]
+}

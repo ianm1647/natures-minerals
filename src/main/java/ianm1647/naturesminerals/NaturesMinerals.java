@@ -2,6 +2,7 @@ package ianm1647.naturesminerals;
 
 import ianm1647.naturesminerals.common.item.NMMaterials;
 import ianm1647.naturesminerals.common.registry.*;
+import ianm1647.naturesminerals.integration.create.CreateIntegration;
 import ianm1647.naturesminerals.integration.farmersdelight.FarmersDelightIntegration;
 import ianm1647.naturesminerals.integration.mekanism.MekanismIntegration;
 import net.minecraft.resources.ResourceLocation;
@@ -27,6 +28,7 @@ public class NaturesMinerals {
         NMBlocks.BLOCKS.register(bus);
         NMItems.ITEMS.register(bus);
         NMMaterials.ARMOR_MATERIALS.register(bus);
+        NMEntityTypes.ENTITIES.register(bus);
 
         NMTabs.CREATIVE_TABS.register(bus);
 
@@ -38,6 +40,11 @@ public class NaturesMinerals {
         if (ModList.get().isLoaded("farmersdelight")) {
             FarmersDelightIntegration.register(bus);
             bus.addListener(FarmersDelightIntegration::addCreative);
+        }
+
+        if (ModList.get().isLoaded("create")) {
+            CreateIntegration.register(bus);
+            bus.addListener(CreateIntegration::addCreative);
         }
     }
 

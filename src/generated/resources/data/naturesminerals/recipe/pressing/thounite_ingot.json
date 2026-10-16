@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "naturesminerals:thounite_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "naturesminerals:thounite_sheet"
+    }
+  ]
+}

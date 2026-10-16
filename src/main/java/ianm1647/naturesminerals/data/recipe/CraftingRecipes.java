@@ -23,6 +23,7 @@ public class CraftingRecipes {
         recipesMaterials(output);
         recipesBlocks(output);
         recipesGear(output);
+        recipesFood(output);
 
         compatRecipes(output);
     }
@@ -33,31 +34,31 @@ public class CraftingRecipes {
                     String name = item.getId().getPath();
                     if (name.contains("nugget")) {
                         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
-                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_nugget", "") + "_ingot")))
+                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_nugget", "_ingot"))))
                                 .requires(item.get(), 9).group("ingot")
                                 .unlockedBy("has_material", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
-                                .save(output, NaturesMinerals.loc(name.replace("_nugget", "") + "_ingot_from_nugget"));
+                                .save(output, NaturesMinerals.loc(name.replace("_nugget", "_ingot_from_nugget")));
                     }
                     if (name.contains("ingot")) {
                         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
-                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_ingot", "") + "_nugget")), 9)
+                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_ingot", "_nugget"))), 9)
                                 .requires(item.get(), 1).group("nugget")
                                 .unlockedBy("has_material", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
-                                .save(output, NaturesMinerals.loc(name.replace("_ingot", "") + "_nugget_from_ingot"));
+                                .save(output, NaturesMinerals.loc(name.replace("_ingot", "_nugget_from_ingot")));
                     }
                     if (name.contains("block") && !name.contains("raw")) {
                         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
-                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_block", "") + "_ingot")), 9)
+                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_block", "_ingot"))), 9)
                                 .requires(item.get(), 1).group("ingot")
                                 .unlockedBy("has_material", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
-                                .save(output, NaturesMinerals.loc(name.replace("_block", "") + "_ingot_from_block"));
+                                .save(output, NaturesMinerals.loc(name.replace("_block", "_ingot_from_block")));
                     }
                     if (name.contains("raw") && item.get() instanceof BlockItem) {
                         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
                                         BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_block", ""))), 9)
                                 .requires(item.get(), 1).group("raw_material")
                                 .unlockedBy("has_material", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
-                                .save(output, NaturesMinerals.loc(name.replace("_block", "") + "_from_block"));
+                                .save(output, NaturesMinerals.loc(name.replace("_block", "_from_block")));
                     }
                 });
     }
@@ -68,7 +69,7 @@ public class CraftingRecipes {
                     String name = item.getId().getPath();
                     if (name.contains("ingot")) {
                         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
-                                BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_ingot", "") + "_block")))
+                                BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_ingot", "_block"))))
                                 .requires(item.get(), 9).group("storage_blocks")
                                 .unlockedBy("has_material", InventoryChangeTrigger.TriggerInstance.hasItems(item.get())).save(output);
                     }
@@ -88,35 +89,47 @@ public class CraftingRecipes {
                     String name = item.getId().getPath();
                     if (name.contains("ingot")) {
                         craftPickaxe(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
-                                        name.replace("_ingot", "") + "_pickaxe")),
+                                        name.replace("_ingot", "_pickaxe"))),
                                 item.get(), output);
                         craftAxe(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
-                                        name.replace("_ingot", "") + "_axe")),
+                                        name.replace("_ingot", "_axe"))),
                                 item.get(), output);
                         craftShovel(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
-                                        name.replace("_ingot", "") + "_shovel")),
+                                        name.replace("_ingot", "_shovel"))),
                                 item.get(), output);
                         craftSword(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
-                                        name.replace("_ingot", "") + "_sword")),
+                                        name.replace("_ingot", "_sword"))),
                                 item.get(), output);
                         craftHoe(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
-                                        name.replace("_ingot", "") + "_hoe")),
+                                        name.replace("_ingot", "_hoe"))),
                                 item.get(), output);
                         craftHelmet(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
-                                        name.replace("_ingot", "") + "_helmet")),
+                                        name.replace("_ingot", "_helmet"))),
                                 item.get(), output);
                         craftChestplate(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
-                                        name.replace("_ingot", "") + "_chestplate")),
+                                        name.replace("_ingot", "_chestplate"))),
                                 item.get(), output);
                         craftLeggings(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
-                                        name.replace("_ingot", "") + "_leggings")),
+                                        name.replace("_ingot", "_leggings"))),
                                 item.get(), output);
                         craftBoots(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
-                                        name.replace("_ingot", "") + "_boots")),
+                                        name.replace("_ingot", "_boots"))),
                                 item.get(), output);
                     }
                 });
     }
+
+    private static void recipesFood(RecipeOutput output) {
+        NMItems.ITEMS.getEntries().forEach((item) -> {
+            String name = item.getId().getPath();
+            if (name.contains("apple")) {
+                craftApple(item.get(),
+                        BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
+                                name.replace("_apple", "_ingot"))), output);
+            }
+        });
+    }
+
 
     private static void compatRecipes(RecipeOutput output) {
         MekanismIntegration.Items.MEKITEM.getEntries()
@@ -125,11 +138,11 @@ public class CraftingRecipes {
                     if (name.contains("paxel")) {
                         craftPaxel(item.get(),
                                 BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
-                                        name.replace("_paxel", "") + "_axe")),
+                                        name.replace("_paxel", "_axe"))),
                                 BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
-                                        name.replace("_paxel", "") + "_pickaxe")),
+                                        name.replace("_paxel", "_pickaxe"))),
                                 BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID,
-                                        name.replace("_paxel", "") + "_shovel")), output);
+                                        name.replace("_paxel", "_shovel"))), output);
                     }
                 });
 
@@ -235,6 +248,17 @@ public class CraftingRecipes {
                 .pattern("i i")
                 .define('i', input)
                 .group("boots").unlockedBy("has_material",
+                        InventoryChangeTrigger.TriggerInstance.hasItems(input)).save(output);
+    }
+
+    private static void craftApple(ItemLike item, ItemLike input, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, item, 1)
+                .pattern("iii")
+                .pattern("iai")
+                .pattern("iii")
+                .define('i', input)
+                .define('a', Items.APPLE)
+                .group("apples").unlockedBy("has_material",
                         InventoryChangeTrigger.TriggerInstance.hasItems(input)).save(output);
     }
 

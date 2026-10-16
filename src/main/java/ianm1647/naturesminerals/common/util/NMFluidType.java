@@ -1,7 +1,9 @@
 package ianm1647.naturesminerals.common.util;
 
+import com.mojang.blaze3d.vertex.PoseStack;
 import ianm1647.naturesminerals.NaturesMinerals;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ScreenEffectRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.fluids.FluidType;
@@ -20,7 +22,7 @@ public class NMFluidType extends FluidType {
     @Override
     public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
         consumer.accept(new IClientFluidTypeExtensions() {
-            private final ResourceLocation UNDER_FLUID = ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID, "texture/block/fluid/" + texture + "_still.png");
+            private final ResourceLocation UNDER_FLUID = ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID, "textures/block/fluid/" + texture + "_still.png");
             private final ResourceLocation FLUID_STILL = ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID, "block/fluid/" + texture + "_still");
             private final ResourceLocation FLUID_FLOW = ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID, "block/fluid/" + texture + "_flowing");
             private final ResourceLocation FLUID_OVERLAY = ResourceLocation.fromNamespaceAndPath(NaturesMinerals.MODID, "block/fluid/" + texture + "_still");
@@ -39,6 +41,12 @@ public class NMFluidType extends FluidType {
 
             public ResourceLocation getRenderOverlayTexture(Minecraft mc) {
                 return UNDER_FLUID;
+            }
+
+            public void renderOverlay(Minecraft mc, PoseStack poseStack) {
+                ResourceLocation texture = this.getRenderOverlayTexture(mc);
+                if (texture != null)
+                    ScreenEffectRenderer.renderFluid(mc, poseStack, texture);
             }
         });
     }

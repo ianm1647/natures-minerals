@@ -2,9 +2,11 @@ package ianm1647.naturesminerals.common.registry;
 
 import com.google.common.collect.Sets;
 import ianm1647.naturesminerals.NaturesMinerals;
+import ianm1647.naturesminerals.common.item.NMAppleItem;
 import ianm1647.naturesminerals.common.item.NMMaterials;
 import ianm1647.naturesminerals.common.item.tools.*;
 import ianm1647.naturesminerals.common.item.NMTiers;
+import ianm1647.naturesminerals.common.util.NMFoodProperties;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -186,6 +188,12 @@ public class NMItems {
         THOUNITE_NUGGET = registerWithTab("thounite_nugget", () -> new Item(basicItem()));
         THOUNITE_DUST = registerWithTab("thounite_dust", () -> new Item(basicItem()));
 
+        UVAROVITE_APPLE = registerWithTab("uvarovite_apple", () -> new NMAppleItem(basicItem().food(NMFoodProperties.UVAROVITE_APPLE)));
+        KUNZITE_APPLE = registerWithTab("kunzite_apple", () -> new NMAppleItem(basicItem().food(NMFoodProperties.KUNZITE_APPLE)));
+        STIBNITE_APPLE = registerWithTab("stibnite_apple", () -> new NMAppleItem(basicItem().food(NMFoodProperties.STIBNITE_APPLE)));
+        ASTRITE_APPLE = registerWithTab("astrite_apple", () -> new NMAppleItem(basicItem().food(NMFoodProperties.ASTRITE_APPLE)));
+        THOUNITE_APPLE = registerWithTab("thounite_apple", () -> new NMAppleItem(basicItem().food(NMFoodProperties.THOUNITE_APPLE)));
+
         UVAROVITE_SWORD = registerWithTab("uvarovite_sword", () -> new ModSwordItem(NMTiers.UVAROVITE, basicItem()));
         UVAROVITE_SHOVEL = registerWithTab("uvarovite_shovel", () -> new ModShovelItem(NMTiers.UVAROVITE, basicItem()));
         UVAROVITE_PICKAXE = registerWithTab("uvarovite_pickaxe", () -> new ModPickaxeItem(NMTiers.UVAROVITE, basicItem()));
@@ -216,32 +224,30 @@ public class NMItems {
         THOUNITE_AXE = registerWithTab("thounite_axe", () -> new ModAxeItem(NMTiers.THOUNITE, basicItem()));
         THOUNITE_HOE = registerWithTab("thounite_hoe", () -> new ModHoeItem(NMTiers.THOUNITE, basicItem()));
 
-        UVAROVITE_HELMET = registerWithTab("uvarovite_helmet", () -> new ArmorItem(NMMaterials.UVAROVITE, ArmorItem.Type.HELMET, basicItem()));
-        UVAROVITE_CHESTPLATE = registerWithTab("uvarovite_chestplate", () -> new ArmorItem(NMMaterials.UVAROVITE, ArmorItem.Type.CHESTPLATE, basicItem()));
-        UVAROVITE_LEGGINGS = registerWithTab("uvarovite_leggings", () -> new ArmorItem(NMMaterials.UVAROVITE, ArmorItem.Type.LEGGINGS, basicItem()));
-        UVAROVITE_BOOTS = registerWithTab("uvarovite_boots", () -> new ArmorItem(NMMaterials.UVAROVITE, ArmorItem.Type.BOOTS, basicItem()));
+        UVAROVITE_HELMET = registerWithTab("uvarovite_helmet", () -> new ArmorItem(NMMaterials.UVAROVITE, ArmorItem.Type.HELMET, basicItem().stacksTo(1)));
+        UVAROVITE_CHESTPLATE = registerWithTab("uvarovite_chestplate", () -> new ArmorItem(NMMaterials.UVAROVITE, ArmorItem.Type.CHESTPLATE, basicItem().stacksTo(1)));
+        UVAROVITE_LEGGINGS = registerWithTab("uvarovite_leggings", () -> new ArmorItem(NMMaterials.UVAROVITE, ArmorItem.Type.LEGGINGS, basicItem().stacksTo(1)));
+        UVAROVITE_BOOTS = registerWithTab("uvarovite_boots", () -> new ArmorItem(NMMaterials.UVAROVITE, ArmorItem.Type.BOOTS, basicItem().stacksTo(1)));
 
-        KUNZITE_HELMET = registerWithTab("kunzite_helmet", () -> new ArmorItem(NMMaterials.KUNZITE, ArmorItem.Type.HELMET, basicItem()));
-        KUNZITE_CHESTPLATE = registerWithTab("kunzite_chestplate", () -> new ArmorItem(NMMaterials.KUNZITE, ArmorItem.Type.CHESTPLATE, basicItem()));
-        KUNZITE_LEGGINGS = registerWithTab("kunzite_leggings", () -> new ArmorItem(NMMaterials.KUNZITE, ArmorItem.Type.LEGGINGS, basicItem()));
-        KUNZITE_BOOTS = registerWithTab("kunzite_boots", () -> new ArmorItem(NMMaterials.KUNZITE, ArmorItem.Type.BOOTS, basicItem()));
+        KUNZITE_HELMET = registerWithTab("kunzite_helmet", () -> new ArmorItem(NMMaterials.KUNZITE, ArmorItem.Type.HELMET, basicItem().stacksTo(1)));
+        KUNZITE_CHESTPLATE = registerWithTab("kunzite_chestplate", () -> new ArmorItem(NMMaterials.KUNZITE, ArmorItem.Type.CHESTPLATE, basicItem().stacksTo(1)));
+        KUNZITE_LEGGINGS = registerWithTab("kunzite_leggings", () -> new ArmorItem(NMMaterials.KUNZITE, ArmorItem.Type.LEGGINGS, basicItem().stacksTo(1)));
+        KUNZITE_BOOTS = registerWithTab("kunzite_boots", () -> new ArmorItem(NMMaterials.KUNZITE, ArmorItem.Type.BOOTS, basicItem().stacksTo(1)));
 
-        STIBNITE_HELMET = registerWithTab("stibnite_helmet", () -> new ArmorItem(NMMaterials.STIBNITE, ArmorItem.Type.HELMET, basicItem()));
-        STIBNITE_CHESTPLATE = registerWithTab("stibnite_chestplate", () -> new ArmorItem(NMMaterials.STIBNITE, ArmorItem.Type.CHESTPLATE, basicItem()));
-        STIBNITE_LEGGINGS = registerWithTab("stibnite_leggings", () -> new ArmorItem(NMMaterials.STIBNITE, ArmorItem.Type.LEGGINGS, basicItem()));
-        STIBNITE_BOOTS = registerWithTab("stibnite_boots", () -> new ArmorItem(NMMaterials.STIBNITE, ArmorItem.Type.BOOTS, basicItem()));
+        STIBNITE_HELMET = registerWithTab("stibnite_helmet", () -> new ArmorItem(NMMaterials.STIBNITE, ArmorItem.Type.HELMET, basicItem().stacksTo(1)));
+        STIBNITE_CHESTPLATE = registerWithTab("stibnite_chestplate", () -> new ArmorItem(NMMaterials.STIBNITE, ArmorItem.Type.CHESTPLATE, basicItem().stacksTo(1)));
+        STIBNITE_LEGGINGS = registerWithTab("stibnite_leggings", () -> new ArmorItem(NMMaterials.STIBNITE, ArmorItem.Type.LEGGINGS, basicItem().stacksTo(1)));
+        STIBNITE_BOOTS = registerWithTab("stibnite_boots", () -> new ArmorItem(NMMaterials.STIBNITE, ArmorItem.Type.BOOTS, basicItem().stacksTo(1)));
 
-        ASTRITE_HELMET = registerWithTab("astrite_helmet", () -> new ArmorItem(NMMaterials.ASTRITE, ArmorItem.Type.HELMET, basicItem()));
-        ASTRITE_CHESTPLATE = registerWithTab("astrite_chestplate", () -> new ArmorItem(NMMaterials.ASTRITE, ArmorItem.Type.CHESTPLATE, basicItem()));
-        ASTRITE_LEGGINGS = registerWithTab("astrite_leggings", () -> new ArmorItem(NMMaterials.ASTRITE, ArmorItem.Type.LEGGINGS, basicItem()));
-        ASTRITE_BOOTS = registerWithTab("astrite_boots", () -> new ArmorItem(NMMaterials.ASTRITE, ArmorItem.Type.BOOTS, basicItem()));
+        ASTRITE_HELMET = registerWithTab("astrite_helmet", () -> new ArmorItem(NMMaterials.ASTRITE, ArmorItem.Type.HELMET, basicItem().stacksTo(1)));
+        ASTRITE_CHESTPLATE = registerWithTab("astrite_chestplate", () -> new ArmorItem(NMMaterials.ASTRITE, ArmorItem.Type.CHESTPLATE, basicItem().stacksTo(1)));
+        ASTRITE_LEGGINGS = registerWithTab("astrite_leggings", () -> new ArmorItem(NMMaterials.ASTRITE, ArmorItem.Type.LEGGINGS, basicItem().stacksTo(1)));
+        ASTRITE_BOOTS = registerWithTab("astrite_boots", () -> new ArmorItem(NMMaterials.ASTRITE, ArmorItem.Type.BOOTS, basicItem().stacksTo(1)));
 
-        THOUNITE_HELMET = registerWithTab("thounite_helmet", () -> new ArmorItem(NMMaterials.THOUNITE, ArmorItem.Type.HELMET, basicItem()));
-        THOUNITE_CHESTPLATE = registerWithTab("thounite_chestplate", () -> new ArmorItem(NMMaterials.THOUNITE, ArmorItem.Type.CHESTPLATE, basicItem()));
-        THOUNITE_LEGGINGS = registerWithTab("thounite_leggings", () -> new ArmorItem(NMMaterials.THOUNITE, ArmorItem.Type.LEGGINGS, basicItem()));
-        THOUNITE_BOOTS = registerWithTab("thounite_boots", () -> new ArmorItem(NMMaterials.THOUNITE, ArmorItem.Type.BOOTS, basicItem()));
-
-
+        THOUNITE_HELMET = registerWithTab("thounite_helmet", () -> new ArmorItem(NMMaterials.THOUNITE, ArmorItem.Type.HELMET, basicItem().stacksTo(1)));
+        THOUNITE_CHESTPLATE = registerWithTab("thounite_chestplate", () -> new ArmorItem(NMMaterials.THOUNITE, ArmorItem.Type.CHESTPLATE, basicItem().stacksTo(1)));
+        THOUNITE_LEGGINGS = registerWithTab("thounite_leggings", () -> new ArmorItem(NMMaterials.THOUNITE, ArmorItem.Type.LEGGINGS, basicItem().stacksTo(1)));
+        THOUNITE_BOOTS = registerWithTab("thounite_boots", () -> new ArmorItem(NMMaterials.THOUNITE, ArmorItem.Type.BOOTS, basicItem().stacksTo(1)));
 
         BLOOD_LAVA_BUCKET = registerWithTab("blood_lava_bucket", () -> new BucketItem(NMFluids.BLOOD_LAVA.get(),
                 new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));

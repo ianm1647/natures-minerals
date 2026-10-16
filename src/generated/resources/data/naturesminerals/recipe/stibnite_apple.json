@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "apples",
+  "key": {
+    "a": {
+      "item": "minecraft:apple"
+    },
+    "i": {
+      "item": "naturesminerals:stibnite_ingot"
+    }
+  },
+  "pattern": [
+    "iii",
+    "iai",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturesminerals:stibnite_apple"
+  }
+}

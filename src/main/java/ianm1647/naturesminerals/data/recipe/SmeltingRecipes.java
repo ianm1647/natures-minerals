@@ -3,6 +3,7 @@ package ianm1647.naturesminerals.data.recipe;
 import ianm1647.naturesminerals.NaturesMinerals;
 import ianm1647.naturesminerals.common.registry.NMItems;
 import ianm1647.naturesminerals.data.recipe.builder.ConditionalCookingRecipeBuilder;
+import ianm1647.naturesminerals.integration.farmersdelight.FarmersDelightIntegration;
 import ianm1647.naturesminerals.integration.mekanism.MekanismIntegration;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -11,7 +12,6 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
 
 public class SmeltingRecipes {
@@ -40,33 +40,33 @@ public class SmeltingRecipes {
                     }
                     if (name.contains("dust")) {
                         SimpleCookingRecipeBuilder.smelting(Ingredient.of(item.get()), RecipeCategory.MISC,
-                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_dust", "") + "_ingot")), 1.0f, 200)
+                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_dust", "_ingot"))), 1.0f, 200)
                                 .unlockedBy("has_dust", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
-                                .save(output, NaturesMinerals.loc(name.replace("_dust", "") + "_ingot_from_dust_smelting"));
+                                .save(output, NaturesMinerals.loc(name.replace("_dust", "_ingot_from_dust_smelting")));
                         SimpleCookingRecipeBuilder.blasting(Ingredient.of(item.get()), RecipeCategory.MISC,
-                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_dust", "") + "_ingot")), 1.0f, 100)
+                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_dust", "_ingot"))), 1.0f, 100)
                                 .unlockedBy("has_dust", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
-                                .save(output, NaturesMinerals.loc(name.replace("_dust", "") + "_ingot_from_dust_blasting"));
+                                .save(output, NaturesMinerals.loc(name.replace("_dust", "_ingot_from_dust_blasting")));
                     }
                     if (name.contains("ore")) {
                         if (name.contains("deepslate")) {
                             SimpleCookingRecipeBuilder.smelting(Ingredient.of(item.get()), RecipeCategory.MISC,
-                                            BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("deepslate_", "").replace("_ore", "") + "_ingot")), 1.0f, 200)
+                                            BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("deepslate_", "").replace("_ore", "_ingot"))), 1.0f, 200)
                                     .unlockedBy("has_ore", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
-                                    .save(output, NaturesMinerals.loc(name.replace("deepslate_", "").replace("_ore", "") + "_ingot_from_deepslate_ore_smelting"));
+                                    .save(output, NaturesMinerals.loc(name.replace("deepslate_", "").replace("_ore", "_ingot_from_deepslate_ore_smelting")));
                             SimpleCookingRecipeBuilder.blasting(Ingredient.of(item.get()), RecipeCategory.MISC,
-                                            BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("deepslate_", "").replace("_ore", "") + "_ingot")), 1.0f, 100)
+                                            BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("deepslate_", "").replace("_ore", "_ingot"))), 1.0f, 100)
                                     .unlockedBy("has_ore", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
-                                    .save(output, NaturesMinerals.loc(name.replace("deepslate_", "").replace("_ore", "") + "_ingot_from_deepslate_ore_blasting"));
+                                    .save(output, NaturesMinerals.loc(name.replace("deepslate_", "").replace("_ore", "_ingot_from_deepslate_ore_blasting")));
                         } else {
                             SimpleCookingRecipeBuilder.smelting(Ingredient.of(item.get()), RecipeCategory.MISC,
-                                            BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_ore", "") + "_ingot")), 1.0f, 200)
+                                            BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_ore", "_ingot"))), 1.0f, 200)
                                     .unlockedBy("has_ore", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
-                                    .save(output, NaturesMinerals.loc(name.replace("_ore", "") + "_ingot_from_ore_smelting"));
+                                    .save(output, NaturesMinerals.loc(name.replace("_ore", "_ingot_from_ore_smelting")));
                             SimpleCookingRecipeBuilder.blasting(Ingredient.of(item.get()), RecipeCategory.MISC,
-                                            BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_ore", "") + "_ingot")), 1.0f, 100)
+                                            BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_ore", "_ingot"))), 1.0f, 100)
                                     .unlockedBy("has_ore", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
-                                    .save(output, NaturesMinerals.loc(name.replace("_ore", "") + "_ingot_from_ore_blasting"));
+                                    .save(output, NaturesMinerals.loc(name.replace("_ore", "_ingot_from_ore_blasting")));
                         }
                     }
                     if (name.contains("raw") && item.get() instanceof BlockItem) {
@@ -79,26 +79,43 @@ public class SmeltingRecipes {
     }
 
     private static void compatSmelting(RecipeOutput output) {
-        if (ModList.get().isLoaded("mekanism")) {
-            MekanismIntegration.Items.MEKITEM.getEntries()
-                    .forEach((item) -> {
-                        String name = item.getId().getPath();
-                        if (name.contains("paxel")) {
-                            ConditionalCookingRecipeBuilder.smelting(Ingredient.of(item.get()), RecipeCategory.MISC,
-                                            BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_paxel", "") + "_nugget")),
-                                            0.1f, 200)
-                                    .conditions(new ModLoadedCondition("mekanism"))
-                                    .unlockedBy("has_paxel", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
-                                    .save(output, NaturesMinerals.loc(name.replace("_paxel", "") + "_nugget") + "_from_paxel");
-                            ConditionalCookingRecipeBuilder.blasting(Ingredient.of(item.get()), RecipeCategory.MISC,
-                                            BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_paxel", "") + "_nugget")),
-                                            0.1f, 100)
-                                    .conditions(new ModLoadedCondition("mekanism"))
-                                    .unlockedBy("has_paxel", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
-                                    .save(output, NaturesMinerals.loc(name.replace("_paxel", "") + "_nugget") + "_from_blasting_paxel");
-                        }
-                    });
-        }
+        MekanismIntegration.Items.MEKITEM.getEntries()
+                .forEach((item) -> {
+                    String name = item.getId().getPath();
+                    if (name.contains("paxel")) {
+                        ConditionalCookingRecipeBuilder.smelting(Ingredient.of(item.get()), RecipeCategory.MISC,
+                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_paxel", "_nugget"))),
+                                        0.1f, 200)
+                                .conditions(new ModLoadedCondition("mekanism"))
+                                .unlockedBy("has_paxel", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
+                                .save(output, NaturesMinerals.loc(name.replace("_paxel", "_nugget_from_paxel")));
+                        ConditionalCookingRecipeBuilder.blasting(Ingredient.of(item.get()), RecipeCategory.MISC,
+                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_paxel", "") + "_nugget")),
+                                        0.1f, 100)
+                                .conditions(new ModLoadedCondition("mekanism"))
+                                .unlockedBy("has_paxel", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
+                                .save(output, NaturesMinerals.loc(name.replace("_paxel", "_nugget_from_blasting_paxel")));
+                    }
+                });
+
+        FarmersDelightIntegration.Items.DELITEM.getEntries()
+                .forEach((item) -> {
+                    String name = item.getId().getPath();
+                    if (name.contains("knife")) {
+                        ConditionalCookingRecipeBuilder.smelting(Ingredient.of(item.get()), RecipeCategory.MISC,
+                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_knife", "_nugget"))),
+                                        0.1f, 200)
+                                .conditions(new ModLoadedCondition("farmersdelight"))
+                                .unlockedBy("has_knife", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
+                                .save(output, NaturesMinerals.loc(name.replace("_knife", "_nugget_from_knife")));
+                        ConditionalCookingRecipeBuilder.blasting(Ingredient.of(item.get()), RecipeCategory.MISC,
+                                        BuiltInRegistries.ITEM.get(NaturesMinerals.loc(name.replace("_knife", "") + "_nugget")),
+                                        0.1f, 100)
+                                .conditions(new ModLoadedCondition("farmersdelight"))
+                                .unlockedBy("has_knife", InventoryChangeTrigger.TriggerInstance.hasItems(item.get()))
+                                .save(output, NaturesMinerals.loc(name.replace("_knife", "_nugget_from_blasting_knife")));
+                    }
+                });
     }
 
     private static void recipesNuggetSmelting(RecipeOutput output) {

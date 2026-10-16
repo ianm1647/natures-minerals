@@ -4,10 +4,6 @@ import ianm1647.naturesminerals.common.item.NMTiers;
 import it.unimi.dsi.fastutil.objects.ReferenceOpenHashSet;
 import mekanism.api.MekanismItemAbilities;
 import mekanism.tools.common.ToolsTags;
-import mekanism.tools.common.item.ItemMekanismPaxel;
-import mekanism.tools.common.material.IPaxelMaterial;
-import mekanism.tools.common.material.MaterialCreator;
-import mekanism.tools.common.material.VanillaPaxelMaterialCreator;
 import mekanism.tools.common.util.ToolsUtils;
 import net.minecraft.Util;
 import net.minecraft.advancements.CriteriaTriggers;
@@ -47,7 +43,7 @@ public class ModPaxelItem extends DiggerItem {
     });
 
     public ModPaxelItem(NMTiers tier, Item.Properties properties) {
-        super(tier, ToolsTags.Blocks.MINEABLE_WITH_PAXEL, properties.attributes(createAttributes(tier, 1.5f, -2.4f)));
+        super(tier, ToolsTags.Blocks.MINEABLE_WITH_PAXEL, properties.attributes(createAttributes(tier, 1.5f, -2.4f)).stacksTo(1));
     }
 
     public void appendHoverText(@NotNull ItemStack stack, @NotNull Item.@NotNull TooltipContext context, @NotNull List<Component> tooltip, @NotNull TooltipFlag flag) {

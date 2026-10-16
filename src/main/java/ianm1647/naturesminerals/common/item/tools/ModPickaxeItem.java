@@ -6,6 +6,6 @@ import net.minecraft.world.item.PickaxeItem;
 
 public class ModPickaxeItem extends PickaxeItem {
     public ModPickaxeItem(NMTiers tier, Properties properties) {
-        super(tier, properties.attributes(createAttributes(tier, 1, -2.8f)));
+        super(tier, properties.attributes(createAttributes(tier, 1, -2.8f)).stacksTo(1));
     }
 }
