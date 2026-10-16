@@ -4,6 +4,7 @@ import ianm1647.naturesminerals.NaturesMinerals;
 import ianm1647.naturesminerals.common.registry.NMItems;
 import ianm1647.naturesminerals.common.tag.NMCommonTags;
 import ianm1647.naturesminerals.common.tag.NMCompatTags;
+import ianm1647.naturesminerals.integration.create.CreateIntegration;
 import ianm1647.naturesminerals.integration.farmersdelight.FarmersDelightIntegration;
 import ianm1647.naturesminerals.integration.farmersdelight.ModKnifeItem;
 import ianm1647.naturesminerals.integration.mekanism.MekanismIntegration;
@@ -92,6 +93,19 @@ public class NMItemTagProvider extends ItemTagsProvider {
         tag(NMCommonTags.Items.DUSTS_STIBNITE).add(NMItems.STIBNITE_DUST.get());
         tag(NMCommonTags.Items.DUSTS_ASTRITE).add(NMItems.ASTRITE_DUST.get());
         tag(NMCommonTags.Items.DUSTS_THOUNITE).add(NMItems.THOUNITE_DUST.get());
+
+        tag(NMCommonTags.Items.PLATES).addTags(
+                NMCommonTags.Items.PLATES_UVAROVITE,
+                NMCommonTags.Items.PLATES_KUNZITE,
+                NMCommonTags.Items.PLATES_STIBNITE,
+                NMCommonTags.Items.PLATES_ASTRITE,
+                NMCommonTags.Items.PLATES_THOUNITE
+        );
+        tag(NMCommonTags.Items.PLATES_UVAROVITE).add(NMItems.UVAROVITE_SHEET.get());
+        tag(NMCommonTags.Items.PLATES_KUNZITE).add(NMItems.KUNZITE_SHEET.get());
+        tag(NMCommonTags.Items.PLATES_STIBNITE).add(NMItems.STIBNITE_SHEET.get());
+        tag(NMCommonTags.Items.PLATES_ASTRITE).add(NMItems.ASTRITE_SHEET.get());
+        tag(NMCommonTags.Items.PLATES_THOUNITE).add(NMItems.THOUNITE_SHEET.get());
     }
 
     private void itemBlockTags() {
@@ -252,7 +266,7 @@ public class NMItemTagProvider extends ItemTagsProvider {
         FarmersDelightIntegration.Items.DELITEM.getEntries()
                 .forEach((item) -> {
                     if (item.get() instanceof ModKnifeItem) {
-                        tag(ModTags.KNIVES).add(item.get());
+                        tag(ModTags.Items.KNIVES).add(item.get());
                     }
                 });
     }

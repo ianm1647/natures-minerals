@@ -21,24 +21,8 @@ public class CreateIntegration {
     public class Items {
         public static DeferredRegister<Item> CREATEITEM;
 
-        public static Supplier<Item> UVAROVITE_SHEET;
-        public static Supplier<Item> KUNZITE_SHEET;
-        public static Supplier<Item> STIBNITE_SHEET;
-        public static Supplier<Item> ASTRITE_SHEET;
-        public static Supplier<Item> THOUNITE_SHEET;
-
         static {
             CREATEITEM = DeferredRegister.create(Registries.ITEM, NaturesMinerals.MODID);
-
-            UVAROVITE_SHEET = CREATEITEM.register("uvarovite_sheet", () -> new Item(basicItem()));
-
-            KUNZITE_SHEET = CREATEITEM.register("kunzite_sheet", () -> new Item(basicItem()));
-
-            STIBNITE_SHEET = CREATEITEM.register("stibnite_sheet", () -> new Item(basicItem()));
-
-            ASTRITE_SHEET = CREATEITEM.register("astrite_sheet", () -> new Item(basicItem()));
-
-            THOUNITE_SHEET = CREATEITEM.register("thounite_sheet", () -> new Item(basicItem()));
         }
     }
 

@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-25T05:27:58.1827152	Tags for minecraft:item mod id naturesminerals
+// 1.21.1	2026-10-16T12:34:24.0598427	Tags for minecraft:item mod id naturesminerals
 6076cad3c246147b6db2d37b7488f1f9c7e319d8 data/c/tags/item/clumps.json
 ce0d4ef095d23e134c77d50ed35e067d2d659395 data/c/tags/item/clumps/astrite.json
 e41e2520203e83351e96d0b6e897d93532ec2ef9 data/c/tags/item/clumps/kunzite.json
@@ -37,6 +37,12 @@ baa852b5bc3022bdbe4b9431297d7db8d60d2277 data/c/tags/item/ores/astrite.json
 25e85693b34d888e8c07609a5d8d472c1de5fcf2 data/c/tags/item/ores/kunzite.json
 fdca94b9243f6b645b0705070ece2cbe6b187500 data/c/tags/item/ores/stibnite.json
 c46388a05455da224477a2547420c5ca148f8f31 data/c/tags/item/ores/uvarovite.json
+074a916ae247c8bc25d529de014207493346d8ea data/c/tags/item/plates.json
+e1ea39c20bc31c0d07a412e49ca1cb74f138768e data/c/tags/item/plates/astrite.json
+e706e1c4fe2bd479c2183ff305fc62efce74388d data/c/tags/item/plates/kunzite.json
+908a01b57d2cd8991dd78f242c6da6941a399fcf data/c/tags/item/plates/stibnite.json
+c49e189528dc7cb6a8681a9131984886fb02ddef data/c/tags/item/plates/thounite.json
+a0bd2d42e7ccfac81666a9c56f58d5138a69a71a data/c/tags/item/plates/uvarovite.json
 e62ce7c6d917fd6638a2d69d4eaa690508a8aaee data/c/tags/item/raw_materials.json
 850b9227a9437df1e67f608cc943cbadc85a4729 data/c/tags/item/raw_materials/astrite.json
 09febc4ded3a3d45128f6b06482b868a119b9cf7 data/c/tags/item/raw_materials/kunzite.json

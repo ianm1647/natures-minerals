@@ -126,17 +126,17 @@ public class NMItems {
     public static Supplier<Item> ASTRITE_DUST;
     public static Supplier<Item> THOUNITE_DUST;
 
+    public static Supplier<Item> UVAROVITE_SHEET;
+    public static Supplier<Item> KUNZITE_SHEET;
+    public static Supplier<Item> STIBNITE_SHEET;
+    public static Supplier<Item> ASTRITE_SHEET;
+    public static Supplier<Item> THOUNITE_SHEET;
+
     public static Supplier<Item> UVAROVITE_GEAR;
     public static Supplier<Item> KUNZITE_GEAR;
     public static Supplier<Item> STIBNITE_GEAR;
     public static Supplier<Item> ASTRITE_GEAR;
     public static Supplier<Item> THOUNITE_GEAR;
-
-    public static Supplier<Item> UVAROVITE_PLATE;
-    public static Supplier<Item> KUNZITE_PLATE;
-    public static Supplier<Item> STIBNITE_PLATE;
-    public static Supplier<Item> ASTRITE_PLATE;
-    public static Supplier<Item> THOUNITE_PLATE;
 
     public static Supplier<Item> UVAROVITE_ROD;
     public static Supplier<Item> KUNZITE_ROD;
@@ -168,25 +168,30 @@ public class NMItems {
         UVAROVITE_INGOT = registerWithTab("uvarovite_ingot", () -> new Item(basicItem()));
         UVAROVITE_NUGGET = registerWithTab("uvarovite_nugget", () -> new Item(basicItem()));
         UVAROVITE_DUST = registerWithTab("uvarovite_dust", () -> new Item(basicItem()));
+        UVAROVITE_SHEET = registerWithTab("uvarovite_sheet", () -> new Item(basicItem()));
 
         RAW_KUNZITE = registerWithTab("raw_kunzite", () -> new Item(basicItem()));
         KUNZITE_INGOT = registerWithTab("kunzite_ingot", () -> new Item(basicItem()));
         KUNZITE_NUGGET = registerWithTab("kunzite_nugget", () -> new Item(basicItem()));
         KUNZITE_DUST = registerWithTab("kunzite_dust", () -> new Item(basicItem()));
+        KUNZITE_SHEET = registerWithTab("kunzite_sheet", () -> new Item(basicItem()));
 
         RAW_STIBNITE = registerWithTab("raw_stibnite", () -> new Item(basicItem()));
         STIBNITE_INGOT = registerWithTab("stibnite_ingot", () -> new Item(basicItem()));
         STIBNITE_NUGGET = registerWithTab("stibnite_nugget", () -> new Item(basicItem()));
         STIBNITE_DUST = registerWithTab("stibnite_dust", () -> new Item(basicItem()));
+        STIBNITE_SHEET = registerWithTab("stibnite_sheet", () -> new Item(basicItem()));
 
         RAW_ASTRITE = registerWithTab("raw_astrite", () -> new Item(basicItem()));
         ASTRITE_INGOT = registerWithTab("astrite_ingot", () -> new Item(basicItem()));
         ASTRITE_NUGGET = registerWithTab("astrite_nugget", () -> new Item(basicItem()));
         ASTRITE_DUST = registerWithTab("astrite_dust", () -> new Item(basicItem()));
+        ASTRITE_SHEET = registerWithTab("astrite_sheet", () -> new Item(basicItem()));
 
         THOUNITE_INGOT = registerWithTab("thounite_ingot", () -> new Item(basicItem()));
         THOUNITE_NUGGET = registerWithTab("thounite_nugget", () -> new Item(basicItem()));
         THOUNITE_DUST = registerWithTab("thounite_dust", () -> new Item(basicItem()));
+        THOUNITE_SHEET = registerWithTab("thounite_sheet", () -> new Item(basicItem()));
 
         UVAROVITE_APPLE = registerWithTab("uvarovite_apple", () -> new NMAppleItem(basicItem().food(NMFoodProperties.UVAROVITE_APPLE)));
         KUNZITE_APPLE = registerWithTab("kunzite_apple", () -> new NMAppleItem(basicItem().food(NMFoodProperties.KUNZITE_APPLE)));

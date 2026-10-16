@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "naturesminerals:item/create/uvarovite_sheet"
+    "layer0": "naturesminerals:item/uvarovite_sheet"
   }
 }

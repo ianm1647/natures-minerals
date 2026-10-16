@@ -58,6 +58,7 @@ public class NMCommonTags {
         public static final TagKey<Item> GEARS_THOUNITE = itemTag("gears/thounite");
 
         //plates
+        public static final TagKey<Item> PLATES = itemTag("plates");
         public static final TagKey<Item> PLATES_UVAROVITE = itemTag("plates/uvarovite");
         public static final TagKey<Item> PLATES_KUNZITE = itemTag("plates/kunzite");
         public static final TagKey<Item> PLATES_STIBNITE = itemTag("plates/stibnite");
