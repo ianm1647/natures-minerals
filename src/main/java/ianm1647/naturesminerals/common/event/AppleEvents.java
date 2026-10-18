@@ -48,6 +48,7 @@ public class AppleEvents {
             if (stack.is(NMItems.STIBNITE_APPLE.get())) {
                 if (living.isOnFire() || level.dimensionType().ultraWarm()) {
                     living.extinguishFire();
+                    living.clearFire();
                 }
             }
             if (stack.is(NMItems.ASTRITE_APPLE.get())) {
