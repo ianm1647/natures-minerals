@@ -1,7 +1,7 @@
 package ianm1647.naturesminerals.common.registry;
 
 import ianm1647.naturesminerals.NaturesMinerals;
-import ianm1647.naturesminerals.common.util.NMFluidType;
+import ianm1647.naturesminerals.common.fluid.NMFluidType;
 import net.minecraft.sounds.SoundEvents;
 import net.neoforged.neoforge.common.SoundActions;
 import net.neoforged.neoforge.fluids.FluidType;
@@ -28,37 +28,37 @@ public class NMFluidTypes {
         BLOOD_LAVA = FLUID_TYPES.register("blood_lava",
                 () -> new NMFluidType(FluidType.Properties.create().descriptionId("block.naturesminerals.blood_lava")
                         .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)
-                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(1250), "blood_lava"));
+                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(1250), "blood_lava", 0x320000));
 
         SCORCHING_BLOOD = FLUID_TYPES.register("scorching_blood",
                 () -> new NMFluidType(FluidType.Properties.create().descriptionId("block.naturesminerals.scorching_blood")
                         .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)
-                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(3000), "scorching_blood"));
+                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(3000), "scorching_blood", 0xF16700));
 
         MOLTEN_UVAROVITE = FLUID_TYPES.register("molten_uvarovite",
                 () -> new NMFluidType(FluidType.Properties.create().descriptionId("block.naturesminerals.molten_uvarovite")
                         .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)
-                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(1000), "molten_uvarovite"));
+                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(1000), "molten_uvarovite", 0x25CA08));
 
         MOLTEN_KUNZITE = FLUID_TYPES.register("molten_kunzite",
                 () -> new NMFluidType(FluidType.Properties.create().descriptionId("block.naturesminerals.molten_kunzite")
                         .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)
-                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(1500), "molten_kunzite"));
+                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(1500), "molten_kunzite", 0xB34668));
 
         MOLTEN_STIBNITE = FLUID_TYPES.register("molten_stibnite",
                 () -> new NMFluidType(FluidType.Properties.create().descriptionId("block.naturesminerals.molten_stibnite")
                         .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)
-                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(2000), "molten_stibnite"));
+                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(2000), "molten_stibnite", 0x98A4BF));
 
         MOLTEN_ASTRITE = FLUID_TYPES.register("molten_astrite",
                 () -> new NMFluidType(FluidType.Properties.create().descriptionId("block.naturesminerals.molten_astrite")
                         .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)
-                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(2500), "molten_astrite"));
+                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(2500), "molten_astrite", 0xEB1E0E));
 
         MOLTEN_THOUNITE = FLUID_TYPES.register("molten_thounite",
                 () -> new NMFluidType(FluidType.Properties.create().descriptionId("block.naturesminerals.molten_thounite")
                         .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)
-                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(2750), "molten_thounite"));
+                        .canSwim(false).canDrown(false).lightLevel(15).density(3000).viscosity(6000).temperature(2750), "molten_thounite", 0xD89B30));
 
     }
 

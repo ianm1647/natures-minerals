@@ -1,6 +1,7 @@
 package ianm1647.naturesminerals.common.registry;
 
 import ianm1647.naturesminerals.NaturesMinerals;
+import ianm1647.naturesminerals.common.block.NMLiquidBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
@@ -60,25 +61,25 @@ public class NMBlocks {
         ASTRITE_BLOCK = BLOCKS.register("astrite_block", () -> new Block(settings(Blocks.IRON_BLOCK, 8.0F, 9.0F, SoundType.NETHERITE_BLOCK)));
         THOUNITE_BLOCK = BLOCKS.register("thounite_block", () -> new Block(settings(Blocks.IRON_BLOCK, 10.0F, 12.0F, SoundType.NETHERITE_BLOCK)));
 
-        BLOOD_LAVA = BLOCKS.register("blood_lava", () -> new LiquidBlock(NMFluids.BLOOD_LAVA.get(),
+        BLOOD_LAVA = BLOCKS.register("blood_lava", () -> new NMLiquidBlock(NMFluids.BLOOD_LAVA.get(),
                 BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA).randomTicks().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
                         .mapColor(DyeColor.GREEN).noLootTable()));
-        SCORCHING_BLOOD = BLOCKS.register("scorching_blood", () -> new LiquidBlock(NMFluids.SCORCHING_BLOOD.get(),
+        SCORCHING_BLOOD = BLOCKS.register("scorching_blood", () -> new NMLiquidBlock(NMFluids.SCORCHING_BLOOD.get(),
                 BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA).randomTicks().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
                         .mapColor(DyeColor.PINK).noLootTable()));
-        MOLTEN_UVAROVITE = BLOCKS.register("molten_uvarovite", () -> new LiquidBlock(NMFluids.MOLTEN_UVAROVITE.get(),
+        MOLTEN_UVAROVITE = BLOCKS.register("molten_uvarovite", () -> new NMLiquidBlock(NMFluids.MOLTEN_UVAROVITE.get(),
                 BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA).randomTicks().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
                         .mapColor(DyeColor.GREEN).noLootTable()));
-        MOLTEN_KUNZITE = BLOCKS.register("molten_kunzite", () -> new LiquidBlock(NMFluids.MOLTEN_KUNZITE.get(),
+        MOLTEN_KUNZITE = BLOCKS.register("molten_kunzite", () -> new NMLiquidBlock(NMFluids.MOLTEN_KUNZITE.get(),
                 BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA).randomTicks().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
                         .mapColor(DyeColor.PINK).noLootTable()));
-        MOLTEN_STIBNITE= BLOCKS.register("molten_stibnite", () -> new LiquidBlock(NMFluids.MOLTEN_STIBNITE.get(),
+        MOLTEN_STIBNITE= BLOCKS.register("molten_stibnite", () -> new NMLiquidBlock(NMFluids.MOLTEN_STIBNITE.get(),
                 BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA).randomTicks().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
                         .mapColor(DyeColor.LIGHT_BLUE).noLootTable()));
-        MOLTEN_ASTRITE = BLOCKS.register("molten_astrite", () -> new LiquidBlock(NMFluids.MOLTEN_ASTRITE.get(),
+        MOLTEN_ASTRITE = BLOCKS.register("molten_astrite", () -> new NMLiquidBlock(NMFluids.MOLTEN_ASTRITE.get(),
                 BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA).randomTicks().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
                         .mapColor(DyeColor.RED).noLootTable()));
-        MOLTEN_THOUNITE = BLOCKS.register("molten_thounite", () -> new LiquidBlock(NMFluids.MOLTEN_THOUNITE.get(),
+        MOLTEN_THOUNITE = BLOCKS.register("molten_thounite", () -> new NMLiquidBlock(NMFluids.MOLTEN_THOUNITE.get(),
                 BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA).randomTicks().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
                         .mapColor(DyeColor.YELLOW).noLootTable()));
 
