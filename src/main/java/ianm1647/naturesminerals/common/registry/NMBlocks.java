@@ -63,10 +63,10 @@ public class NMBlocks {
 
         BLOOD_LAVA = BLOCKS.register("blood_lava", () -> new NMLiquidBlock(NMFluids.BLOOD_LAVA.get(),
                 BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA).randomTicks().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
-                        .mapColor(DyeColor.GREEN).noLootTable()));
+                        .mapColor(DyeColor.RED).noLootTable()));
         SCORCHING_BLOOD = BLOCKS.register("scorching_blood", () -> new NMLiquidBlock(NMFluids.SCORCHING_BLOOD.get(),
                 BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA).randomTicks().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
-                        .mapColor(DyeColor.PINK).noLootTable()));
+                        .mapColor(DyeColor.RED).noLootTable()));
         MOLTEN_UVAROVITE = BLOCKS.register("molten_uvarovite", () -> new NMLiquidBlock(NMFluids.MOLTEN_UVAROVITE.get(),
                 BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA).randomTicks().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().strength(100.0F)
                         .mapColor(DyeColor.GREEN).noLootTable()));
